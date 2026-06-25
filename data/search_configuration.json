@@ -1,0 +1,219 @@
+[
+  {
+    "city": "Salvador",
+    "state": "BA",
+    "type": "city",
+    "search_term": "Salvador BA",
+    "group_ids": []
+  },
+  {
+    "city": "Brasília",
+    "state": "DF",
+    "type": "city",
+    "search_term": "Brasília DF",
+    "group_ids": []
+  },
+  {
+    "city": "Curitiba",
+    "state": "PR",
+    "type": "city",
+    "search_term": "Curitiba PR",
+    "group_ids": []
+  },
+  {
+    "city": "Sinop",
+    "state": "MT",
+    "type": "city",
+    "search_term": "Sinop MT",
+    "group_ids": []
+  },
+  {
+    "city": "Santana",
+    "state": "BA",
+    "type": "city",
+    "search_term": "Santana BA",
+    "group_ids": []
+  },
+  {
+    "city": "Camaçari",
+    "state": "BA",
+    "type": "city",
+    "search_term": "Camaçari BA",
+    "group_ids": []
+  },
+  {
+    "city": "Barreiras",
+    "state": "BA",
+    "type": "city",
+    "search_term": "Barreiras BA",
+    "group_ids": []
+  },
+  {
+    "city": "Uberlândia",
+    "state": "MG",
+    "type": "city",
+    "search_term": "Uberlândia MG",
+    "group_ids": []
+  },
+  {
+    "city": "Preto",
+    "state": "SP",
+    "type": "city",
+    "search_term": "Preto SP",
+    "group_ids": []
+  },
+  {
+    "city": "Lorena",
+    "state": "SP",
+    "type": "city",
+    "search_term": "Lorena SP",
+    "group_ids": []
+  },
+  {
+    "city": "Bebedouro",
+    "state": "SP",
+    "type": "city",
+    "search_term": "Bebedouro SP",
+    "group_ids": []
+  },
+  {
+    "city": "Leopoldo",
+    "state": "RS",
+    "type": "city",
+    "search_term": "Leopoldo RS",
+    "group_ids": []
+  },
+  {
+    "city": "Janeiro",
+    "state": "RJ",
+    "type": "city",
+    "search_term": "Janeiro RJ",
+    "group_ids": []
+  },
+  {
+    "city": "Mossoró",
+    "state": "RN",
+    "type": "city",
+    "search_term": "Mossoró RN",
+    "group_ids": []
+  },
+  {
+    "city": "Seguro",
+    "state": "BA",
+    "type": "city",
+    "search_term": "Seguro BA",
+    "group_ids": []
+  },
+  {
+    "city": "Nilópolis",
+    "state": "RJ",
+    "type": "city",
+    "search_term": "Nilópolis RJ",
+    "group_ids": []
+  },
+  {
+    "city": "Goiás",
+    "state": "GO",
+    "type": "city",
+    "search_term": "Goiás GO",
+    "group_ids": []
+  },
+  {
+    "city": "Bauru",
+    "state": "SP",
+    "type": "city",
+    "search_term": "Bauru SP",
+    "group_ids": []
+  },
+  {
+    "city": "Cachoeirinha",
+    "state": "RS",
+    "type": "city",
+    "search_term": "Cachoeirinha RS",
+    "group_ids": []
+  },
+  {
+    "city": "Paulo",
+    "state": "SP",
+    "type": "city",
+    "search_term": "Paulo SP",
+    "group_ids": []
+  },
+  {
+    "city": "Joviânia",
+    "state": "GO",
+    "type": "city",
+    "search_term": "Joviânia GO",
+    "group_ids": []
+  },
+  {
+    "city": "Jacarepaguá",
+    "state": "RJ",
+    "type": "city",
+    "search_term": "Jacarepaguá RJ",
+    "group_ids": []
+  },
+  {
+    "city": "Minas",
+    "state": "MG",
+    "type": "city",
+    "search_term": "Minas MG",
+    "group_ids": []
+  },
+  {
+    "city": "Natal",
+    "state": "RN",
+    "type": "city",
+    "search_term": "Natal RN",
+    "group_ids": []
+  },
+  {
+    "city": "Extremoz",
+    "state": "RN",
+    "type": "city",
+    "search_term": "Extremoz RN",
+    "group_ids": []
+  },
+  {
+    "city": "Pessoa",
+    "state": "PB",
+    "type": "city",
+    "search_term": "Pessoa PB",
+    "group_ids": []
+  },
+  {
+    "city": "Campinas",
+    "state": "SP",
+    "type": "city",
+    "search_term": "Campinas SP",
+    "group_ids": []
+  },
+  {
+    "city": "José",
+    "state": "SC",
+    "type": "city",
+    "search_term": "José SC",
+    "group_ids": []
+  },
+  {
+    "city": "Florianópolis",
+    "state": "SC",
+    "type": "city",
+    "search_term": "Florianópolis SC",
+    "group_ids": []
+  },
+  {
+    "city": "Odessa",
+    "state": "SP",
+    "type": "city",
+    "search_term": "Odessa SP",
+    "group_ids": []
+  },
+  {
+    "city": "Matão",
+    "state": "SP",
+    "type": "city",
+    "search_term": "Matão SP",
+    "group_ids": []
+  }
+]

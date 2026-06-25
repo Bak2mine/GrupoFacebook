@@ -1,0 +1,146 @@
+================================================================================
+LEILOARIA SMART - FACEBOOK GROUPS AUTOMATION - QUICK REFERENCE
+================================================================================
+
+INSTALLATION:
+    pip install -r requirements.txt
+
+COMMON COMMANDS:
+
+    # Complete pipeline (7 min automated + 60 min manual Phase 5)
+    python main.py
+
+    # Test setup
+    python test_pipeline.py
+
+    # Skip slow scraping (reuse existing properties)
+    python main.py --no-scrape
+
+    # Test with limited properties (fast)
+    python main.py --limit 20
+
+    # Skip to Phase 3 (if 1-2 already done)
+    python main.py --skip-to-phase 3
+
+    # Generate Excel after manual work (Phase 5)
+    python main.py --skip-to-phase 6
+
+    # Run individual phases
+    python phase1_extract_data.py
+    python phase2_build_searches.py
+    python phase3_google_search.py
+    python phase4_deduplicate.py
+    python phase5_navigate_groups.py --resume
+    python phase6_build_excel.py
+
+PHASE 5 (MANUAL CLAUDE COWORK):
+
+    See CLAUDE.md for detailed instructions
+
+    Quick summary:
+    1. Reset 4 tabs to google.com
+    2. Navigate 4 tabs to facebook.com/groups/ID
+    3. Read page titles with tabs_context_mcp
+    4. Extract group names from titles
+    5. Save to data/group_names.json
+    6. Repeat every ~40 groups
+    7. Save after every 10 rounds
+
+OUTPUT FILES:
+
+    data/scraped_properties.json       - Raw scraped properties
+    data/city_classification.json      - Cities classified by size
+    data/search_configuration.json     - Search patterns
+    data/searches_with_group_ids.json  - Searches + group IDs
+    data/unique_group_ids.json         - Unique IDs to navigate
+    data/group_names.json              - Captured group names (Phase 5)
+    data/group_ids_detailed.json       - Detailed ID mapping
+
+    output/Leiloaria_Smart_Grupos_Facebook_COMPLETO.xlsx  - FINAL REPORT
+
+PERFORMANCE:
+
+    Phase 1 (Scrape):     2-5 min
+    Phase 2 (Build):      <1 min
+    Phase 3 (Search):     5-10 min
+    Phase 4 (Dedupe):     <1 min
+    Phase 5 (Manual):     60 min (for 258 groups)
+    Phase 6 (Excel):      <1 min
+    ─────────────────────────────────────
+    TOTAL:               ~1.5 hours
+
+TROUBLESHOOTING:
+
+    No module named 'requests':
+    → pip install requests beautifulsoup4 openpyxl
+
+    No properties scraped:
+    → Check internet, verify website accessible, try --limit 5
+
+    Few group IDs found:
+    → Normal for some searches, try Phase 3 again or use Google API
+
+    Excel generation fails:
+    → pip install --upgrade openpyxl
+
+    Phase 5 "Permission denied":
+    → Always reset to Google before Facebook navigation
+    → Use separate tabs_context call after batch navigation
+
+    Lost data between sessions:
+    → Always save group_names.json before stopping
+    → Check leiloaria_grupos.log for activity
+
+CONFIGURATION:
+
+    Edit config.py to customize:
+    - LARGE_CITY_THRESHOLD: Population threshold for neighborhood search
+    - BROWSER_BATCH_SIZE: Number of parallel tabs (default: 4)
+    - SAVE_INTERVAL: Save progress every N rounds (default: 10)
+    - CITY_POPULATION: Add/update city populations
+
+LOGGING:
+
+    Real-time monitoring:
+    → tail -f leiloaria_grupos.log
+
+    View full log:
+    → cat leiloaria_grupos.log
+
+DOCUMENTATION:
+
+    Complete Guide:     README.md
+    Setup Instructions: SETUP_GUIDE.md
+    Claude Cowork:      CLAUDE.md
+    Configuration:      config.py
+    Testing:            test_pipeline.py
+
+PHASE DETAILS:
+
+    1. Extract Data   → Scrapes properties, classifies cities
+    2. Build Searches → Creates search patterns for each city
+    3. Google Search  → Finds Facebook groups via Google
+    4. Deduplicate    → Removes duplicate group IDs
+    5. Navigate       → Manual Phase 5 with Claude Cowork
+    6. Build Excel    → Generates formatted Excel report
+
+WORKFLOW:
+
+    Standard Flow:
+    main.py → Phases 1-4 (7 min) → Phase 5 (manual, 60 min) → Phase 6 (1 min)
+
+    Reuse Existing Data:
+    main.py --no-scrape → Phases 2-6 (5 min total)
+
+    Quick Test:
+    main.py --limit 20 → Complete pipeline with 20 properties
+
+    Resume After Phase 5:
+    main.py --skip-to-phase 6 → Generate Excel from captured names
+
+CONTACT:
+
+    Questions about this process:
+    Lucas — lucas@leiloariasmart.com.br
+
+================================================================================

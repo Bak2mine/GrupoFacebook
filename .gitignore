@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+leiloaria_grupos.log
+
+# Sensitive data
+facebook_cookies.json
+*.env
+credentials.json
+
+# Temporary files
+~$*.xlsx
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (keep only source, not intermediate outputs)
+data/group_ids_detailed.json
+data/unique_group_ids.json
+data/searches_with_real_groups.json

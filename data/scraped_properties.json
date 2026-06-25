@@ -1,10 +1,5 @@
 [
   {
-    "titulo": "Lote Residencial 312m²",
-    "cidade": "Sinop",
-    "estado": "MT"
-  },
-  {
     "titulo": "Loja 431m²",
     "cidade": "Salvador",
     "estado": "BA"
@@ -123,6 +118,11 @@
     "titulo": "Terreno 250m² – SANTA BÁRBARA D",
     "cidade": null,
     "estado": null
+  },
+  {
+    "titulo": "Apto 137m²",
+    "cidade": "José",
+    "estado": "SC"
   },
   {
     "titulo": "Terrenos em Condomínio até 199m² Teresina/PI",
@@ -280,7 +280,7 @@
     "estado": "MG"
   },
   {
-    "titulo": "Casa 256m²",
+    "titulo": "Casa 220m²",
     "cidade": "Natal",
     "estado": "RN"
   },
@@ -370,9 +370,9 @@
     "estado": null
   },
   {
-    "titulo": "Apto 137m²",
-    "cidade": "José",
-    "estado": "SC"
+    "titulo": "Sobrado 141m²",
+    "cidade": "Paulo",
+    "estado": "SP"
   },
   {
     "titulo": "Apartamento Duplex 279m²",

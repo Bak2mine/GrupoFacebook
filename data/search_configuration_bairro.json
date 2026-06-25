@@ -2,16 +2,47 @@
   {
     "city": "Salvador",
     "state": "BA",
-    "type": "city",
-    "search_term": "Salvador BA",
-    "group_ids": []
+    "type": "bairro",
+    "search_term": "Amaralina Salvador",
+    "bairro": "Amaralina",
+    "group_ids": [],
+    "group_details": []
+  },
+  {
+    "city": "Salvador",
+    "state": "BA",
+    "type": "bairro",
+    "search_term": "Federação Salvador",
+    "bairro": "Federação",
+    "group_ids": [],
+    "group_details": []
+  },
+  {
+    "city": "Salvador",
+    "state": "BA",
+    "type": "bairro",
+    "search_term": "Ondina Salvador",
+    "bairro": "Ondina",
+    "group_ids": [],
+    "group_details": []
+  },
+  {
+    "city": "Salvador",
+    "state": "BA",
+    "type": "bairro",
+    "search_term": "Pituaçu Salvador",
+    "bairro": "Pituaçu",
+    "group_ids": [],
+    "group_details": []
   },
   {
     "city": "Uberlândia",
     "state": "MG",
-    "type": "city",
-    "search_term": "Uberlândia MG",
-    "group_ids": []
+    "type": "bairro",
+    "search_term": "Tocantins I Uberlândia",
+    "bairro": "Tocantins I",
+    "group_ids": [],
+    "group_details": []
   },
   {
     "city": "Brasília",
@@ -23,9 +54,11 @@
   {
     "city": "Janeiro",
     "state": "RJ",
-    "type": "city",
-    "search_term": "Janeiro RJ",
-    "group_ids": []
+    "type": "bairro",
+    "search_term": "Caonze Janeiro",
+    "bairro": "Caonze",
+    "group_ids": [],
+    "group_details": []
   },
   {
     "city": "Paulo",

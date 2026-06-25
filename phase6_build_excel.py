@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import List, Dict
 from config import (
     DATA_DIR, FINAL_EXCEL, UNIQUE_IDS_JSON, GROUP_NAMES_JSON,
-    CITY_POPULATION, EXCEL_COLUMNS, LOG_LEVEL, LOG_FORMAT
+    CITY_POPULATION, BAIRRO_POPULATION, EXCEL_COLUMNS, LOG_LEVEL, LOG_FORMAT
 )
 
 # Setup logging
@@ -82,12 +82,28 @@ class ExcelReportBuilder:
             search_term = search.get('search_term', '')
             search_type = search.get('type', 'city')
             group_ids = search.get('group_ids', [])
+            group_details = search.get('group_details', [])
 
-            # Get population for city
-            population = CITY_POPULATION.get(city, 0)
+            # Get population (use bairro if available, otherwise city)
+            bairro = search.get('bairro')
+            if bairro and bairro in BAIRRO_POPULATION:
+                population = BAIRRO_POPULATION[bairro]
+            else:
+                population = CITY_POPULATION.get(city, 0)
+
+            # Build a map of group_id -> name from group_details
+            detail_names = {str(g.get('id')): g.get('name', 'Grupo Privado') for g in group_details}
 
             for group_id in group_ids:
-                group_name = group_names.get(str(group_id), 'Grupo Privado')
+                group_id_str = str(group_id)
+
+                # Try to use name from group_details first (scraped from search results)
+                # Fall back to group_names.json for names from Phase 5 navigation
+                # Finally fall back to "Grupo Privado"
+                if group_id_str in detail_names:
+                    group_name = detail_names[group_id_str]
+                else:
+                    group_name = group_names.get(group_id_str, 'Grupo Privado')
 
                 # Skip if name is just "Facebook" (private group)
                 if group_name.lower() == 'facebook':
@@ -245,11 +261,11 @@ class ExcelReportBuilder:
                     cell.fill = PatternFill(start_color="FFFF00", end_color="FFFF00", fill_type="solid")
 
         # Adjust column widths
-        worksheet.column_dimensions['A'].width = 25  # Busca
+        worksheet.column_dimensions['A'].width = 40  # Busca (wider for full bairro/city names)
         worksheet.column_dimensions['B'].width = 20  # Cidade
-        worksheet.column_dimensions['C'].width = 15  # Tipo
-        worksheet.column_dimensions['D'].width = 12  # ID
-        worksheet.column_dimensions['E'].width = 35  # URL
+        worksheet.column_dimensions['C'].width = 12  # Tipo
+        worksheet.column_dimensions['D'].width = 18  # ID
+        worksheet.column_dimensions['E'].width = 40  # URL
         worksheet.column_dimensions['F'].width = 30  # Nome do Grupo
         worksheet.column_dimensions['G'].width = 15  # Habitantes
 

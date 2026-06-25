@@ -183,6 +183,7 @@ class FacebookScraper:
                 'state': s.get('state'),
                 'type': s.get('type'),
                 'search_term': s.get('search_term'),
+                'bairro': s.get('bairro'),  # Preserve bairro for population lookup
                 'group_ids': s.get('group_ids', []),
                 'group_details': s.get('group_details', [])
             }
@@ -226,5 +227,16 @@ class FacebookScraper:
 
 
 if __name__ == '__main__':
+    import sys
+
+    # Allow custom config file via command line
+    if len(sys.argv) > 1 and sys.argv[1] == '--config' and len(sys.argv) > 2:
+        config_file = Path(sys.argv[2])
+    else:
+        config_file = DATA_DIR / "search_configuration_bairro.json"
+        # Fallback to original if bairro config doesn't exist
+        if not config_file.exists():
+            config_file = DATA_DIR / "search_configuration.json"
+
     scraper = FacebookScraper()
-    scraper.run(DATA_DIR / "search_configuration.json")
+    scraper.run(config_file)

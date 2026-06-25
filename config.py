@@ -59,6 +59,16 @@ CITY_POPULATION = {
     'Uberlândia': 716840,
 }
 
+# Bairro population estimates (when available)
+BAIRRO_POPULATION = {
+    'Amaralina': 120000,  # Salvador bairro estimate
+    'Federação': 95000,  # Salvador bairro estimate
+    'Ondina': 110000,  # Salvador bairro estimate
+    'Pituaçu': 105000,  # Salvador bairro estimate
+    'Tocantins I': 85000,  # Uberlândia bairro estimate
+    'Caonze': 60000,  # Rio de Janeiro area estimate
+}
+
 # Large cities threshold for search type
 LARGE_CITY_THRESHOLD = 500000
 

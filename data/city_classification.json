@@ -7,9 +7,39 @@
       "search_type": "neighborhood"
     },
     {
+      "name": "Uberlândia",
+      "state": "MG",
+      "population": 716840,
+      "search_type": "neighborhood"
+    },
+    {
       "name": "Brasília",
       "state": "DF",
       "population": 3034235,
+      "search_type": "neighborhood"
+    },
+    {
+      "name": "Janeiro",
+      "state": "RJ",
+      "population": 6748000,
+      "search_type": "neighborhood"
+    },
+    {
+      "name": "Paulo",
+      "state": "SP",
+      "population": 11451245,
+      "search_type": "neighborhood"
+    },
+    {
+      "name": "Jacarepaguá",
+      "state": "RJ",
+      "population": 600000,
+      "search_type": "neighborhood"
+    },
+    {
+      "name": "Natal",
+      "state": "RN",
+      "population": 884122,
       "search_type": "neighborhood"
     },
     {
@@ -17,175 +47,139 @@
       "state": "PR",
       "population": 1948626,
       "search_type": "neighborhood"
+    },
+    {
+      "name": "Pessoa",
+      "state": "PB",
+      "population": 809051,
+      "search_type": "neighborhood"
+    },
+    {
+      "name": "Campinas",
+      "state": "SP",
+      "population": 1213792,
+      "search_type": "neighborhood"
     }
   ],
   "small_cities": [
     {
-      "name": "Sinop",
-      "state": "MT",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
       "name": "Santana",
       "state": "BA",
-      "population": 0,
+      "population": 28645,
       "search_type": "city"
     },
     {
       "name": "Camaçari",
       "state": "BA",
-      "population": 0,
+      "population": 252051,
       "search_type": "city"
     },
     {
       "name": "Barreiras",
       "state": "BA",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Uberlândia",
-      "state": "MG",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Preto",
-      "state": "SP",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Lorena",
-      "state": "SP",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Bebedouro",
-      "state": "SP",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Leopoldo",
-      "state": "RS",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Janeiro",
-      "state": "RJ",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Mossoró",
-      "state": "RN",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Seguro",
-      "state": "BA",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Nilópolis",
-      "state": "RJ",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Goiás",
-      "state": "GO",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Bauru",
-      "state": "SP",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Cachoeirinha",
-      "state": "RS",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Paulo",
-      "state": "SP",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Joviânia",
-      "state": "GO",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Jacarepaguá",
-      "state": "RJ",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Minas",
-      "state": "MG",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Natal",
-      "state": "RN",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Extremoz",
-      "state": "RN",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Pessoa",
-      "state": "PB",
-      "population": 0,
-      "search_type": "city"
-    },
-    {
-      "name": "Campinas",
-      "state": "SP",
-      "population": 0,
+      "population": 158292,
       "search_type": "city"
     },
     {
       "name": "José",
       "state": "SC",
-      "population": 0,
+      "population": 268847,
+      "search_type": "city"
+    },
+    {
+      "name": "Preto",
+      "state": "SP",
+      "population": 364254,
+      "search_type": "city"
+    },
+    {
+      "name": "Lorena",
+      "state": "SP",
+      "population": 82716,
+      "search_type": "city"
+    },
+    {
+      "name": "Bebedouro",
+      "state": "SP",
+      "population": 71503,
+      "search_type": "city"
+    },
+    {
+      "name": "Leopoldo",
+      "state": "RS",
+      "population": 82244,
+      "search_type": "city"
+    },
+    {
+      "name": "Mossoró",
+      "state": "RN",
+      "population": 288390,
+      "search_type": "city"
+    },
+    {
+      "name": "Seguro",
+      "state": "BA",
+      "population": 45675,
+      "search_type": "city"
+    },
+    {
+      "name": "Nilópolis",
+      "state": "RJ",
+      "population": 159460,
+      "search_type": "city"
+    },
+    {
+      "name": "Goiás",
+      "state": "GO",
+      "population": 138675,
+      "search_type": "city"
+    },
+    {
+      "name": "Bauru",
+      "state": "SP",
+      "population": 372601,
+      "search_type": "city"
+    },
+    {
+      "name": "Cachoeirinha",
+      "state": "RS",
+      "population": 128020,
+      "search_type": "city"
+    },
+    {
+      "name": "Joviânia",
+      "state": "GO",
+      "population": 6000,
+      "search_type": "city"
+    },
+    {
+      "name": "Minas",
+      "state": "MG",
+      "population": 432000,
+      "search_type": "city"
+    },
+    {
+      "name": "Extremoz",
+      "state": "RN",
+      "population": 18643,
       "search_type": "city"
     },
     {
       "name": "Florianópolis",
       "state": "SC",
-      "population": 0,
+      "population": 492977,
       "search_type": "city"
     },
     {
       "name": "Odessa",
       "state": "SP",
-      "population": 0,
+      "population": 6000,
       "search_type": "city"
     },
     {
       "name": "Matão",
       "state": "SP",
-      "population": 0,
+      "population": 78651,
       "search_type": "city"
     }
   ]

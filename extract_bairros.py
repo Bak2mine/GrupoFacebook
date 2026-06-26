@@ -89,13 +89,13 @@ class BairroExtractor:
     @staticmethod
     def extract_city_from_title(title: str) -> tuple:
         """Extract city and state from property title"""
-        # Match multi-word city names with capital letters (e.g., São Paulo)
-        # Pattern: (Capital + lowercase) optionally followed by more space-separated capitalized words
-        # Then: optional spaces + / + optional spaces + 2-letter state code
+        # Match multi-word city names (e.g., São Paulo, Rio de Janeiro)
+        # Pattern: Capital + letters, optionally followed by more words (capital OR lowercase "de/do/da/dos/das")
+        # Handles: São Paulo (capital-capital), Rio de Janeiro (capital-lowercase-capital)
 
         # First pass: strict with trailing constraints
         loc_match = re.search(
-            r'([A-Z][a-záàâãéèêíïóôõöúçñ]*(?:\s+[A-Z][a-záàâãéèêíïóôõöúçñ]*)*)\s*/\s*([A-Z]{2})(?:\s|–|—|\-|$)',
+            r'([A-Z][a-záàâãéèêíïóôõöúçñ]*(?:\s+(?:[A-Z]|de|do|da|dos|das)?[a-záàâãéèêíïóôõöúçñ]+)*)\s*/\s*([A-Z]{2})(?:\s|–|—|\-|$)',
             title, re.UNICODE
         )
         if loc_match:
@@ -105,7 +105,7 @@ class BairroExtractor:
 
         # Fallback: flexible pattern without strict trailing constraints
         slash_match = re.search(
-            r'([A-Z][a-záàâãéèêíïóôõöúçñ]*(?:\s+[A-Z][a-záàâãéèêíïóôõöúçñ]*)*)\s*/\s*([A-Z]{2})',
+            r'([A-Z][a-záàâãéèêíïóôõöúçñ]*(?:\s+(?:[A-Z]|de|do|da|dos|das)?[a-záàâãéèêíïóôõöúçñ]+)*)\s*/\s*([A-Z]{2})',
             title, re.UNICODE
         )
         if slash_match:

@@ -38,20 +38,19 @@ CITY_POPULATION = {
     'Florianópolis': 492977,
     'Goiás': 138675,
     'Jacarepaguá': 600000,
-    'Janeiro': 6748000,
-    'José': 268847,
+    'Rio de Janeiro': 6748000,  # Was: Janeiro
+    'São José': 268847,  # Was: José
     'Joviânia': 6000,
-    'Leopoldo': 82244,
+    'São Leopoldo': 82244,  # Was: Leopoldo
     'Lorena': 82716,
     'Matão': 78651,
-    'Minas': 432000,
+    'Belo Horizonte': 432000,  # Was: Minas
     'Mossoró': 288390,
     'Natal': 884122,
     'Nilópolis': 159460,
     'Odessa': 6000,
-    'Paulo': 11451245,
-    'Pessoa': 809051,
-    'Preto': 364254,
+    'São Paulo': 11451245,  # Was: Paulo
+    'João Pessoa': 809051,  # Was: Pessoa
     'Salvador': 2355039,
     'Santana': 28645,
     'Seguro': 45675,

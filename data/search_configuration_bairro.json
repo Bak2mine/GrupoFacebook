@@ -54,11 +54,9 @@
   {
     "city": "Janeiro",
     "state": "RJ",
-    "type": "bairro",
-    "search_term": "Caonze Janeiro",
-    "bairro": "Caonze",
-    "group_ids": [],
-    "group_details": []
+    "type": "city",
+    "search_term": "Janeiro RJ",
+    "group_ids": []
   },
   {
     "city": "Paulo",
@@ -166,10 +164,10 @@
     "group_ids": []
   },
   {
-    "city": "Seguro",
+    "city": "Porto Seguro",
     "state": "BA",
     "type": "city",
-    "search_term": "Seguro BA",
+    "search_term": "Porto Seguro BA",
     "group_ids": []
   },
   {

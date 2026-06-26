@@ -53,7 +53,7 @@ CITY_POPULATION = {
     'João Pessoa': 809051,  # Was: Pessoa
     'Salvador': 2355039,
     'Santana': 28645,
-    'Seguro': 45675,
+    'Porto Seguro': 45675,  # Was: Seguro
     'Sinop': 129753,
     'Uberlândia': 716840,
 }

@@ -22,6 +22,18 @@ CITY_NORMALIZATION = {
     'Luís': 'São Luís',
     'Preto': 'São Paulo',
     'Minas': 'Belo Horizonte',
+    'Seguro': 'Porto Seguro',
+}
+
+# Search term normalization (for Busca column)
+SEARCH_TERM_NORMALIZATION = {
+    'Leopoldo RS': 'São Leopoldo RS',
+    'Jose SC': 'São José SC',
+    'Pessoa PB': 'João Pessoa PB',
+    'Janeiro RJ': 'Rio de Janeiro RJ',
+    'Paulo SP': 'São Paulo SP',
+    'Seguro BA': 'Porto Seguro BA',
+    'Luis MA': 'São Luís MA',
 }
 
 # Setup logging
@@ -98,6 +110,8 @@ class ExcelReportBuilder:
             city_display = self.normalize_city_display(city)  # For Excel display
             state = search.get('state', '')
             search_term = search.get('search_term', '')
+            # Normalize search term for display (fix truncated city names)
+            search_term_display = SEARCH_TERM_NORMALIZATION.get(search_term, search_term)
             search_type = search.get('type', 'city')
             group_ids = search.get('group_ids', [])
             group_details = search.get('group_details', [])
@@ -132,7 +146,7 @@ class ExcelReportBuilder:
                 fb_url = f"https://www.facebook.com/groups/{group_id}"
 
                 group_record = {
-                    'Busca': search_term,
+                    'Busca': search_term_display,  # Use normalized search term for display
                     'Cidade': city_display,  # Use normalized city name for display
                     'Tipo': search_type,
                     'ID': str(group_id),

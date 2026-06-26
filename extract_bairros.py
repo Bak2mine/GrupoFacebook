@@ -20,6 +20,18 @@ HEADERS = {
 }
 TIMEOUT = 10
 
+# Truncation normalization: truncated city -> full name
+CITY_NORMALIZATION = {
+    'Paulo': 'São Paulo',
+    'Janeiro': 'Rio de Janeiro',
+    'Leopoldo': 'São Leopoldo',
+    'José': 'São José',
+    'Pessoa': 'João Pessoa',
+    'Luís': 'São Luís',
+    'Preto': 'São Paulo',  # Likely "São Paulo" - full name for common large cities
+    'Minas': 'Belo Horizonte',  # common truncation
+}
+
 
 class BairroExtractor:
     """Extracts bairro information from property listings"""
@@ -38,6 +50,12 @@ class BairroExtractor:
             city: pop for city, pop in CITY_POPULATION.items()
             if pop > self.LARGE_CITY_THRESHOLD
         }
+
+    def normalize_city_name(self, city: str) -> str:
+        """Normalize truncated city names to full names"""
+        if city in CITY_NORMALIZATION:
+            return CITY_NORMALIZATION[city]
+        return city
 
     def get_all_auctions(self, limit: Optional[int] = None) -> List[Dict]:
         """Get all auctions from search page"""
@@ -71,11 +89,20 @@ class BairroExtractor:
     @staticmethod
     def extract_city_from_title(title: str) -> tuple:
         """Extract city and state from property title"""
-        loc_match = re.search(r'([A-Z][a-záàâãéèêíïóôõöúçñ\s]+)/([A-Z]{2})(?:\s|$)', title)
+        # First pass: try with strict constraints (non-greedy + trailing constraints)
+        loc_match = re.search(r'([A-Z][a-záàâãéèêíïóôõöúçñ\s]+?)/([A-Z]{2})(?:\s|–|—|\-|$)', title)
         if loc_match:
             cidade = loc_match.group(1).strip()
             estado = loc_match.group(2).strip()
             return (cidade, estado)
+
+        # Fallback: try without strict trailing constraints
+        slash_match = re.search(r'([A-Z][a-záàâãéèêíïóôõöúçñ\s]+?)/([A-Z]{2})', title)
+        if slash_match:
+            cidade = slash_match.group(1).strip()
+            estado = slash_match.group(2).strip()
+            return (cidade, estado)
+
         return (None, None)
 
     @staticmethod
@@ -121,6 +148,8 @@ class BairroExtractor:
             html_text = response.text
 
             city, state = self.extract_city_from_title(title)
+            if city:
+                city = self.normalize_city_name(city)  # Normalize truncated names
             bairro = self.extract_bairro_from_description(html_text)
 
             if city and bairro:

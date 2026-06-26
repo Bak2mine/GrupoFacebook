@@ -72,20 +72,14 @@ def main():
         logger.error(f"Pipeline failed at {failed_phase}")
         return False
 
-    # Phase 1B: Fix truncated city names (smart substitution)
-    try:
-        from fix_truncated_names import fix_city_names_in_file
-
-        if run_phase("1B: Fix Truncated Names", fix_city_names_in_file):
-            completed_phases.append("Fix Truncated Names")
-        else:
-            # Non-critical, log warning but continue
-            logger.warning("Name fixing had issues, but continuing...")
-            completed_phases.append("Fix Truncated Names (with warnings)")
-
-    except Exception as e:
-        logger.error(f"Phase 1B error: {e}")
-        # Non-critical, continue anyway
+    # Phase 1B: DISABLED - name fixing was causing incorrect substitutions
+    # The truncation issue is in Post/scraper.py property extraction, not search terms
+    logger.info("")
+    logger.info("="*70)
+    logger.info("PHASE: 1B (SKIPPED - Name fixing disabled)")
+    logger.info("="*70)
+    logger.info("Reason: Truncation issue should be fixed in Post/scraper.py extraction")
+    logger.info("")
 
     # Phase 2: Scrape Facebook groups with cookies
     try:

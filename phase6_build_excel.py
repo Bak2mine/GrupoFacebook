@@ -12,6 +12,18 @@ from config import (
     CITY_POPULATION, BAIRRO_POPULATION, EXCEL_COLUMNS, LOG_LEVEL, LOG_FORMAT
 )
 
+# Truncation normalization for display
+CITY_NORMALIZATION = {
+    'Paulo': 'São Paulo',
+    'Janeiro': 'Rio de Janeiro',
+    'Leopoldo': 'São Leopoldo',
+    'José': 'São José',
+    'Pessoa': 'João Pessoa',
+    'Luís': 'São Luís',
+    'Preto': 'São Paulo',
+    'Minas': 'Belo Horizonte',
+}
+
 # Setup logging
 logging.basicConfig(level=getattr(logging, LOG_LEVEL), format=LOG_FORMAT)
 logger = logging.getLogger(__name__)
@@ -32,6 +44,11 @@ class ExcelReportBuilder:
     def __init__(self):
         self.groups_data = []
         self.search_summary = {}
+
+    @staticmethod
+    def normalize_city_display(city: str) -> str:
+        """Restore full city names for display (e.g., Paulo -> São Paulo)"""
+        return CITY_NORMALIZATION.get(city, city)
 
     def load_data_sources(self):
         """Load all required data files
@@ -78,6 +95,7 @@ class ExcelReportBuilder:
 
         for search in searches:
             city = search.get('city', 'Unknown')
+            city_display = self.normalize_city_display(city)  # For Excel display
             state = search.get('state', '')
             search_term = search.get('search_term', '')
             search_type = search.get('type', 'city')
@@ -89,7 +107,8 @@ class ExcelReportBuilder:
             if bairro and bairro in BAIRRO_POPULATION:
                 population = BAIRRO_POPULATION[bairro]
             else:
-                population = CITY_POPULATION.get(city, 0)
+                # Use normalized city name for population lookup too
+                population = CITY_POPULATION.get(city_display, CITY_POPULATION.get(city, 0))
 
             # Build a map of group_id -> name from group_details
             detail_names = {str(g.get('id')): g.get('name', 'Grupo Privado') for g in group_details}
@@ -114,7 +133,7 @@ class ExcelReportBuilder:
 
                 group_record = {
                     'Busca': search_term,
-                    'Cidade': city,
+                    'Cidade': city_display,  # Use normalized city name for display
                     'Tipo': search_type,
                     'ID': str(group_id),
                     'URL': fb_url,

@@ -11,13 +11,13 @@ from pathlib import Path
 from urllib.parse import quote
 
 from playwright.sync_api import sync_playwright
-from config import DATA_DIR, LOG_LEVEL, LOG_FORMAT
+from config import DATA_DIR, LOG_LEVEL, LOG_FORMAT, FACEBOOK_COOKIES
 
 # Setup logging
 logging.basicConfig(level=getattr(logging, LOG_LEVEL), format=LOG_FORMAT)
 logger = logging.getLogger(__name__)
 
-# Path to store cookies
+# Path to store cookies (fallback if not in config)
 COOKIES_FILE = Path("facebook_cookies.json")
 
 
@@ -37,12 +37,19 @@ class FacebookGroupScraper:
         self.browser = self.playwright.chromium.launch(headless=self.headless)
         self.page = self.browser.new_page()
 
-        # Load cookies if they exist
-        if COOKIES_FILE.exists():
+        # Load cookies - priority: config.py > facebook_cookies.json
+        cookies = None
+        if FACEBOOK_COOKIES:
+            cookies = FACEBOOK_COOKIES
+            logger.info(f"Using {len(cookies)} cookies from config.py")
+        elif COOKIES_FILE.exists():
             with open(COOKIES_FILE, 'r') as f:
                 cookies = json.load(f)
-                self.page.context.add_cookies(cookies)
-                logger.info(f"Loaded {len(cookies)} cookies from {COOKIES_FILE}")
+            logger.info(f"Using {len(cookies)} cookies from {COOKIES_FILE}")
+
+        if cookies:
+            self.page.context.add_cookies(cookies)
+            logger.info("Cookies loaded - using saved Facebook session")
 
         logger.info("Browser started successfully")
 

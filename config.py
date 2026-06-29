@@ -98,3 +98,7 @@ EXCEL_COLUMNS = {
         'Busca', 'Cidade', 'Tipo', 'Qtd. Grupos', 'Habitantes'
     ]
 }
+
+# Facebook cookies for authentication (optional - set to [] for manual login)
+# To use auto-login: run login-once.py to save your session, then cookies are stored here
+FACEBOOK_COOKIES = []  # Auto-populated by login script

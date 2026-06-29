@@ -5,9 +5,9 @@ Configuration for Leiloaria Facebook Groups Automation
 from pathlib import Path
 import json
 
-# Base paths
-LEILOARIA_DIR = Path(r"C:\Users\andre\Desktop\Leiloaria")
-GRUPO_DIR = LEILOARIA_DIR / "Grupo"
+# Base paths (relative to config.py location for portability)
+GRUPO_DIR = Path(__file__).parent
+LEILOARIA_DIR = GRUPO_DIR.parent
 POST_DIR = LEILOARIA_DIR / "Post"
 OUTPUT_DIR = GRUPO_DIR / "output"
 TEMP_DIR = GRUPO_DIR / ".temp"

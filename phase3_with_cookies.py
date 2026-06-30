@@ -53,20 +53,46 @@ class FacebookGroupScraper:
         # Use ONLY system Chrome, never Chromium
         user_data_dir = str(Path.home() / ".leiloaria-browser-data")
 
-        try:
-            logger.info("Launching Google Chrome...")
-            # Use channel="chrome" to force system Chrome, not bundled Chromium
-            self.browser = self.playwright.chromium.launch_persistent_context(
-                user_data_dir=user_data_dir,
-                channel="chrome",
-                headless=self.headless
-            )
-            self.page = self.browser.new_page()
-            logger.info("Successfully launched Google Chrome")
-        except Exception as e:
-            logger.error(f"Failed to launch Chrome: {e}")
-            logger.error("Make sure Google Chrome is installed")
-            raise
+        # Try explicit Chrome path first
+        chrome_paths = [
+            r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+            r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+        ]
+
+        chrome_found = False
+        for chrome_path in chrome_paths:
+            if Path(chrome_path).exists():
+                try:
+                    logger.info(f"Launching Google Chrome from {chrome_path}...")
+                    self.browser = self.playwright.chromium.launch_persistent_context(
+                        user_data_dir=user_data_dir,
+                        executable_path=chrome_path,
+                        headless=self.headless
+                    )
+                    self.page = self.browser.new_page()
+                    logger.info("Successfully launched Google Chrome")
+                    chrome_found = True
+                    break
+                except Exception as e:
+                    logger.debug(f"Chrome path failed: {e}")
+                    continue
+
+        if not chrome_found:
+            # Fallback to channel method
+            try:
+                logger.info("Trying Chrome via channel...")
+                self.browser = self.playwright.chromium.launch_persistent_context(
+                    user_data_dir=user_data_dir,
+                    channel="chrome",
+                    headless=self.headless
+                )
+                self.page = self.browser.new_page()
+                logger.info("Successfully launched Google Chrome via channel")
+            except Exception as e:
+                logger.error(f"Failed to launch Chrome: {e}")
+                logger.error("Make sure Google Chrome is installed at:")
+                logger.error("  C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe")
+                raise
 
         # Load cookies - priority: config.py > facebook_cookies.json
         cookies = None

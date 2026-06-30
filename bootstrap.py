@@ -92,11 +92,42 @@ def capture_facebook_login():
         # Start browser with timeout
         try:
             playwright = sync_playwright().start()
-            browser = playwright.chromium.launch(headless=False, timeout=30000)
+
+            # Try explicit Chrome paths first
+            chrome_paths = [
+                r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+                r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+            ]
+
+            browser = None
+            for chrome_path in chrome_paths:
+                if Path(chrome_path).exists():
+                    try:
+                        browser = playwright.chromium.launch(
+                            headless=False,
+                            timeout=30000,
+                            executable_path=chrome_path
+                        )
+                        break
+                    except Exception:
+                        continue
+
+            # Fallback to channel method
+            if browser is None:
+                try:
+                    browser = playwright.chromium.launch(
+                        headless=False,
+                        timeout=30000,
+                        channel="chrome"
+                    )
+                except Exception:
+                    logger.error("Could not launch Chrome via channel either")
+                    raise
+
             page = browser.new_page()
         except Exception as e:
             logger.error(f"Could not open browser: {e}")
-            logger.error("This usually means Playwright browsers aren't properly installed")
+            logger.error("Make sure Google Chrome is installed")
             return False
 
         # Navigate to Facebook

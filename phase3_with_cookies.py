@@ -39,7 +39,7 @@ else:
 class FacebookGroupScraper:
     """Scrape Facebook groups using authenticated session"""
 
-    def __init__(self, headless: bool = True):
+    def __init__(self, headless: bool = False):
         self.headless = headless
         self.playwright = None
         self.browser = None

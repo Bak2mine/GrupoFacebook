@@ -257,13 +257,27 @@ class BairroExtractor:
 
         searches = []
 
-        # Load existing search config
+        # Load existing search config, or create from CITY_POPULATION if not found
         existing_config = Path("data/search_configuration.json")
         if existing_config.exists():
             with open(existing_config, 'r', encoding='utf-8') as f:
                 existing_searches = json.load(f)
         else:
+            # No existing config - create from CITY_POPULATION
+            from config import CITY_POPULATION
             existing_searches = []
+            for city in CITY_POPULATION.keys():
+                # Guess state (simplified - just use "SP" for most, "RJ" for Rio)
+                state = "RJ" if "Janeiro" in city or "Jacare" in city else "SP"
+                existing_searches.append({
+                    'city': city,
+                    'state': state,
+                    'type': 'city',
+                    'search_term': f"imoveis {city}",
+                    'group_ids': [],
+                    'group_details': []
+                })
+            print(f"Created {len(existing_searches)} city-level searches from CITY_POPULATION")
 
         # Process each search
         for search in existing_searches:

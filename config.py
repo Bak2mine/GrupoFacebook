@@ -4,9 +4,17 @@ Configuration for Leiloaria Facebook Groups Automation
 
 from pathlib import Path
 import json
+import sys
 
-# Base paths (relative to config.py location for portability)
-GRUPO_DIR = Path(__file__).parent
+# Base paths - when running as .exe, use directory of the executable
+# When running as script, use the script's directory
+if getattr(sys, 'frozen', False):
+    # Running as PyInstaller .exe
+    GRUPO_DIR = Path(sys.executable).parent
+else:
+    # Running as normal Python script
+    GRUPO_DIR = Path(__file__).parent
+
 LEILOARIA_DIR = GRUPO_DIR.parent
 POST_DIR = LEILOARIA_DIR / "Post"
 OUTPUT_DIR = GRUPO_DIR / "output"

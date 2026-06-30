@@ -13,6 +13,18 @@ from urllib.parse import quote
 from playwright.sync_api import sync_playwright
 from config import DATA_DIR, LOG_LEVEL, LOG_FORMAT
 
+import os
+import sys
+
+# Force Playwright to look outside the temporary EXE folder
+if getattr(sys, 'frozen', False):
+    # If running as an EXE, look in the user's home profile directory
+    os.environ["PLAYWRIGHT_BROWSERS_PATH"] = os.path.expanduser(r"~\AppData\Local\ms-playwright")
+else:
+    # If running normally in your venv, use default system pathing
+    os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "0"
+
+
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
 
@@ -31,7 +43,7 @@ class FacebookScraper:
         logger.info("="*70 + "\n")
 
         self.playwright = sync_playwright().start()
-        self.browser = self.playwright.chromium.launch(headless=False)
+        self.browser = self.playwright.chromium.launch(headless=False,channel="chrome")
         self.page = self.browser.new_page()
 
         # Load saved cookies if they exist

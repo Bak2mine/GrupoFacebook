@@ -1,0 +1,90 @@
+================================================================================
+                    LEILOARIA SMART - QUICK REFERENCE
+================================================================================
+
+FOR YOU (Developer) - Building the .EXE:
+
+  Step 1: pip install pyinstaller
+  Step 2: build_exe.bat
+  Step 3: Share dist/Leiloaria Smart.exe with coworker
+
+FOR YOUR COWORKER - Running the .EXE:
+
+  Step 1: Extract the zip
+  Step 2: Double-click "Leiloaria Smart.exe"
+  Step 3: First run: Auto-downloads browser (~5 min), asks to log in Facebook (once)
+  Step 4: Future runs: Completely automatic, just double-click!
+
+================================================================================
+
+FILES YOU CREATED/MODIFIED:
+
+bootstrap.py               Auto-install Playwright browsers
+build_exe.bat             One-click build script
+build_exe.ps1             PowerShell build script
+BUILD_EXE.md              Full build guide
+COWORKER_INSTALL.md       Simple user instructions
+STANDALONE_EXE_SUMMARY.md Technical overview
+
+Modified config files (now portable):
+  Grupo/config.py         Relative paths
+  Post/config.py          Relative paths
+  Post/diagnose_pptx.py   Relative paths
+
+================================================================================
+
+WHAT BOOTSTRAP DOES:
+
+  1. Check if Playwright browsers installed
+  2. If not, auto-download (~300MB, ~5min, one-time)
+  3. Run main pipeline
+  4. Handle errors gracefully
+
+RESULT: Coworker never needs terminal, pip, or Python knowledge
+
+================================================================================
+
+DISTRIBUTION CHECKLIST:
+
+  [ ] Run: build_exe.bat
+  [ ] Verify: dist/Leiloaria Smart.exe exists
+  [ ] Create folder: leiloaria-smart/
+  [ ] Copy: dist/Leiloaria Smart.exe → leiloaria-smart/
+  [ ] Copy: COWORKER_INSTALL.md → leiloaria-smart/
+  [ ] Zip: leiloaria-smart/ → leiloaria-smart.zip
+  [ ] Send to coworker
+
+COWORKER DOES:
+
+  [ ] Extract zip
+  [ ] Double-click .exe
+  [ ] Wait for browser (~5 min first run only)
+  [ ] Log into Facebook once
+  [ ] Find Excel in Grupo/output/
+
+================================================================================
+
+TECHNICAL:
+
+  .EXE includes:
+    ✓ Python runtime (PyInstaller)
+    ✓ All dependencies (openpyxl, beautifulsoup4, requests, playwright)
+    ✓ Your scripts and data
+
+  .EXE does NOT include:
+    ✗ Playwright browser binaries (~300MB) - Downloaded on first run
+
+  Paths:
+    ✓ All relative - works in any directory
+    ✓ No absolute paths left
+    ✓ Portable across Windows/Mac/Linux
+
+================================================================================
+
+NO FURTHER ACTION NEEDED - EVERYTHING IS READY TO BUILD
+
+Run: build_exe.bat
+
+Then share the .exe with your coworker.
+
+================================================================================

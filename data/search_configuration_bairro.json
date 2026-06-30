@@ -2,47 +2,16 @@
   {
     "city": "Salvador",
     "state": "BA",
-    "type": "bairro",
-    "search_term": "Amaralina Salvador",
-    "bairro": "Amaralina",
-    "group_ids": [],
-    "group_details": []
-  },
-  {
-    "city": "Salvador",
-    "state": "BA",
-    "type": "bairro",
-    "search_term": "Federação Salvador",
-    "bairro": "Federação",
-    "group_ids": [],
-    "group_details": []
-  },
-  {
-    "city": "Salvador",
-    "state": "BA",
-    "type": "bairro",
-    "search_term": "Ondina Salvador",
-    "bairro": "Ondina",
-    "group_ids": [],
-    "group_details": []
-  },
-  {
-    "city": "Salvador",
-    "state": "BA",
-    "type": "bairro",
-    "search_term": "Pituaçu Salvador",
-    "bairro": "Pituaçu",
-    "group_ids": [],
-    "group_details": []
+    "type": "city",
+    "search_term": "Salvador BA",
+    "group_ids": []
   },
   {
     "city": "Uberlândia",
     "state": "MG",
-    "type": "bairro",
-    "search_term": "Tocantins I Uberlândia",
-    "bairro": "Tocantins I",
-    "group_ids": [],
-    "group_details": []
+    "type": "city",
+    "search_term": "Uberlândia MG",
+    "group_ids": []
   },
   {
     "city": "Brasília",

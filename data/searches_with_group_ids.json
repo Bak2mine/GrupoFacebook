@@ -2,20 +2,19 @@
   {
     "city": "Salvador",
     "state": "BA",
-    "type": "bairro",
-    "search_term": "Amaralina Salvador",
-    "bairro": "Amaralina",
+    "type": "city",
+    "search_term": "Salvador BA",
     "group_ids": [
       "1120043751375488",
-      "1674566626118993",
       "1554453854803215",
-      "1709276312713836",
+      "1674566626118993",
       "1410240139266333",
-      "759761177003416",
       "289651344710945",
+      "1709276312713836",
+      "1629856543977154",
+      "759761177003416",
       "421680128199966",
-      "281364753085504",
-      "1629856543977154"
+      "281364753085504"
     ],
     "group_details": [
       {
@@ -24,19 +23,14 @@
         "url": "https://www.facebook.com/groups/1120043751375488/"
       },
       {
-        "id": "1674566626118993",
-        "name": "Compra e venda - Salvador Bahia",
-        "url": "https://www.facebook.com/groups/1674566626118993/"
-      },
-      {
         "id": "1554453854803215",
         "name": "Imóveis Salvador",
         "url": "https://www.facebook.com/groups/1554453854803215/"
       },
       {
-        "id": "1709276312713836",
-        "name": "Imóveis - Compra Venda Aluguel",
-        "url": "https://www.facebook.com/groups/1709276312713836/"
+        "id": "1674566626118993",
+        "name": "Compra e venda - Salvador Bahia",
+        "url": "https://www.facebook.com/groups/1674566626118993/"
       },
       {
         "id": "1410240139266333",
@@ -44,14 +38,24 @@
         "url": "https://www.facebook.com/groups/1410240139266333/"
       },
       {
-        "id": "759761177003416",
-        "name": "GRUPO IMOBILIÁRIO compra e venda.",
-        "url": "https://www.facebook.com/groups/759761177003416/"
-      },
-      {
         "id": "289651344710945",
         "name": "Aluguel de Casa em Salvador",
         "url": "https://www.facebook.com/groups/289651344710945/"
+      },
+      {
+        "id": "1709276312713836",
+        "name": "Imóveis - Compra Venda Aluguel",
+        "url": "https://www.facebook.com/groups/1709276312713836/"
+      },
+      {
+        "id": "1629856543977154",
+        "name": "Aluguel Casas e Apartamentos Salvador",
+        "url": "https://www.facebook.com/groups/1629856543977154/"
+      },
+      {
+        "id": "759761177003416",
+        "name": "GRUPO IMOBILIÁRIO compra e venda.",
+        "url": "https://www.facebook.com/groups/759761177003416/"
       },
       {
         "id": "421680128199966",
@@ -62,244 +66,25 @@
         "id": "281364753085504",
         "name": "Aluguel de Imóveis em Salvador é aqui",
         "url": "https://www.facebook.com/groups/281364753085504/"
-      },
-      {
-        "id": "1629856543977154",
-        "name": "Aluguel Casas e Apartamentos Salvador",
-        "url": "https://www.facebook.com/groups/1629856543977154/"
-      }
-    ]
-  },
-  {
-    "city": "Salvador",
-    "state": "BA",
-    "type": "bairro",
-    "search_term": "Federação Salvador",
-    "bairro": "Federação",
-    "group_ids": [
-      "1120043751375488",
-      "1674566626118993",
-      "1554453854803215",
-      "1709276312713836",
-      "1410240139266333",
-      "759761177003416",
-      "289651344710945",
-      "421680128199966",
-      "281364753085504",
-      "1629856543977154"
-    ],
-    "group_details": [
-      {
-        "id": "1120043751375488",
-        "name": "Venda e Aluguel de imóveis Salvador BA",
-        "url": "https://www.facebook.com/groups/1120043751375488/"
-      },
-      {
-        "id": "1674566626118993",
-        "name": "Compra e venda - Salvador Bahia",
-        "url": "https://www.facebook.com/groups/1674566626118993/"
-      },
-      {
-        "id": "1554453854803215",
-        "name": "Imóveis Salvador",
-        "url": "https://www.facebook.com/groups/1554453854803215/"
-      },
-      {
-        "id": "1709276312713836",
-        "name": "Imóveis - Compra Venda Aluguel",
-        "url": "https://www.facebook.com/groups/1709276312713836/"
-      },
-      {
-        "id": "1410240139266333",
-        "name": "Imoveis usados e repasse em Salvador Bahia parcerias e trocas",
-        "url": "https://www.facebook.com/groups/1410240139266333/"
-      },
-      {
-        "id": "759761177003416",
-        "name": "GRUPO IMOBILIÁRIO compra e venda.",
-        "url": "https://www.facebook.com/groups/759761177003416/"
-      },
-      {
-        "id": "289651344710945",
-        "name": "Aluguel de Casa em Salvador",
-        "url": "https://www.facebook.com/groups/289651344710945/"
-      },
-      {
-        "id": "421680128199966",
-        "name": "Aluguel de casas / apartamentos Salvador Bahia",
-        "url": "https://www.facebook.com/groups/421680128199966/"
-      },
-      {
-        "id": "281364753085504",
-        "name": "Aluguel de Imóveis em Salvador é aqui",
-        "url": "https://www.facebook.com/groups/281364753085504/"
-      },
-      {
-        "id": "1629856543977154",
-        "name": "Aluguel Casas e Apartamentos Salvador",
-        "url": "https://www.facebook.com/groups/1629856543977154/"
-      }
-    ]
-  },
-  {
-    "city": "Salvador",
-    "state": "BA",
-    "type": "bairro",
-    "search_term": "Ondina Salvador",
-    "bairro": "Ondina",
-    "group_ids": [
-      "1120043751375488",
-      "1674566626118993",
-      "1554453854803215",
-      "1709276312713836",
-      "1410240139266333",
-      "759761177003416",
-      "289651344710945",
-      "421680128199966",
-      "281364753085504",
-      "1629856543977154"
-    ],
-    "group_details": [
-      {
-        "id": "1120043751375488",
-        "name": "Venda e Aluguel de imóveis Salvador BA",
-        "url": "https://www.facebook.com/groups/1120043751375488/"
-      },
-      {
-        "id": "1674566626118993",
-        "name": "Compra e venda - Salvador Bahia",
-        "url": "https://www.facebook.com/groups/1674566626118993/"
-      },
-      {
-        "id": "1554453854803215",
-        "name": "Imóveis Salvador",
-        "url": "https://www.facebook.com/groups/1554453854803215/"
-      },
-      {
-        "id": "1709276312713836",
-        "name": "Imóveis - Compra Venda Aluguel",
-        "url": "https://www.facebook.com/groups/1709276312713836/"
-      },
-      {
-        "id": "1410240139266333",
-        "name": "Imoveis usados e repasse em Salvador Bahia parcerias e trocas",
-        "url": "https://www.facebook.com/groups/1410240139266333/"
-      },
-      {
-        "id": "759761177003416",
-        "name": "GRUPO IMOBILIÁRIO compra e venda.",
-        "url": "https://www.facebook.com/groups/759761177003416/"
-      },
-      {
-        "id": "289651344710945",
-        "name": "Aluguel de Casa em Salvador",
-        "url": "https://www.facebook.com/groups/289651344710945/"
-      },
-      {
-        "id": "421680128199966",
-        "name": "Aluguel de casas / apartamentos Salvador Bahia",
-        "url": "https://www.facebook.com/groups/421680128199966/"
-      },
-      {
-        "id": "281364753085504",
-        "name": "Aluguel de Imóveis em Salvador é aqui",
-        "url": "https://www.facebook.com/groups/281364753085504/"
-      },
-      {
-        "id": "1629856543977154",
-        "name": "Aluguel Casas e Apartamentos Salvador",
-        "url": "https://www.facebook.com/groups/1629856543977154/"
-      }
-    ]
-  },
-  {
-    "city": "Salvador",
-    "state": "BA",
-    "type": "bairro",
-    "search_term": "Pituaçu Salvador",
-    "bairro": "Pituaçu",
-    "group_ids": [
-      "1120043751375488",
-      "1674566626118993",
-      "1554453854803215",
-      "1709276312713836",
-      "1410240139266333",
-      "759761177003416",
-      "289651344710945",
-      "421680128199966",
-      "281364753085504",
-      "1629856543977154"
-    ],
-    "group_details": [
-      {
-        "id": "1120043751375488",
-        "name": "Venda e Aluguel de imóveis Salvador BA",
-        "url": "https://www.facebook.com/groups/1120043751375488/"
-      },
-      {
-        "id": "1674566626118993",
-        "name": "Compra e venda - Salvador Bahia",
-        "url": "https://www.facebook.com/groups/1674566626118993/"
-      },
-      {
-        "id": "1554453854803215",
-        "name": "Imóveis Salvador",
-        "url": "https://www.facebook.com/groups/1554453854803215/"
-      },
-      {
-        "id": "1709276312713836",
-        "name": "Imóveis - Compra Venda Aluguel",
-        "url": "https://www.facebook.com/groups/1709276312713836/"
-      },
-      {
-        "id": "1410240139266333",
-        "name": "Imoveis usados e repasse em Salvador Bahia parcerias e trocas",
-        "url": "https://www.facebook.com/groups/1410240139266333/"
-      },
-      {
-        "id": "759761177003416",
-        "name": "GRUPO IMOBILIÁRIO compra e venda.",
-        "url": "https://www.facebook.com/groups/759761177003416/"
-      },
-      {
-        "id": "289651344710945",
-        "name": "Aluguel de Casa em Salvador",
-        "url": "https://www.facebook.com/groups/289651344710945/"
-      },
-      {
-        "id": "421680128199966",
-        "name": "Aluguel de casas / apartamentos Salvador Bahia",
-        "url": "https://www.facebook.com/groups/421680128199966/"
-      },
-      {
-        "id": "281364753085504",
-        "name": "Aluguel de Imóveis em Salvador é aqui",
-        "url": "https://www.facebook.com/groups/281364753085504/"
-      },
-      {
-        "id": "1629856543977154",
-        "name": "Aluguel Casas e Apartamentos Salvador",
-        "url": "https://www.facebook.com/groups/1629856543977154/"
       }
     ]
   },
   {
     "city": "Uberlândia",
     "state": "MG",
-    "type": "bairro",
-    "search_term": "Tocantins I Uberlândia",
-    "bairro": "Tocantins I",
+    "type": "city",
+    "search_term": "Uberlândia MG",
     "group_ids": [
       "2657285511177657",
-      "191184937737599",
-      "1075750579134571",
       "599734292074642",
+      "1075750579134571",
+      "191184937737599",
       "486490283107814",
       "1420946561546386",
-      "972160929553617",
-      "887841795338003",
-      "1534050627071402",
-      "647382753175951"
+      "1106768254132518",
+      "647382753175951",
+      "458263057691773",
+      "972160929553617"
     ],
     "group_details": [
       {
@@ -308,9 +93,9 @@
         "url": "https://www.facebook.com/groups/2657285511177657/"
       },
       {
-        "id": "191184937737599",
-        "name": "COMPRA / VENDE / TROCA UBERLÂNDIA",
-        "url": "https://www.facebook.com/groups/191184937737599/"
+        "id": "599734292074642",
+        "name": "CASAS PRA ALUGAR DIRETO COM O DONO UBERLANDIA",
+        "url": "https://www.facebook.com/groups/599734292074642/"
       },
       {
         "id": "1075750579134571",
@@ -318,9 +103,9 @@
         "url": "https://www.facebook.com/groups/1075750579134571/"
       },
       {
-        "id": "599734292074642",
-        "name": "CASAS PRA ALUGAR DIRETO COM O DONO UBERLANDIA",
-        "url": "https://www.facebook.com/groups/599734292074642/"
+        "id": "191184937737599",
+        "name": "COMPRA / VENDE / TROCA UBERLÂNDIA",
+        "url": "https://www.facebook.com/groups/191184937737599/"
       },
       {
         "id": "486490283107814",
@@ -333,24 +118,24 @@
         "url": "https://www.facebook.com/groups/1420946561546386/"
       },
       {
-        "id": "972160929553617",
-        "name": "IMÓVEIS UBERLÂNDIA (vendas em Uberlândia)",
-        "url": "https://www.facebook.com/groups/972160929553617/"
-      },
-      {
-        "id": "887841795338003",
-        "name": "Aluguel KitNet Uberlândia MG",
-        "url": "https://www.facebook.com/groups/887841795338003/"
-      },
-      {
-        "id": "1534050627071402",
-        "name": "Tudo no Bairro Morumbi - Uberlândia -MG",
-        "url": "https://www.facebook.com/groups/1534050627071402/"
+        "id": "1106768254132518",
+        "name": "Aluguel Uberlândia MG",
+        "url": "https://www.facebook.com/groups/1106768254132518/"
       },
       {
         "id": "647382753175951",
         "name": "Casa pra alugar direto com dono em Uberlândia",
         "url": "https://www.facebook.com/groups/647382753175951/"
+      },
+      {
+        "id": "458263057691773",
+        "name": "trocas e vendas Uberlandia MG",
+        "url": "https://www.facebook.com/groups/458263057691773/"
+      },
+      {
+        "id": "972160929553617",
+        "name": "IMÓVEIS UBERLÂNDIA (vendas em Uberlândia)",
+        "url": "https://www.facebook.com/groups/972160929553617/"
       }
     ]
   },
@@ -359,17 +144,16 @@
     "state": "DF",
     "type": "city",
     "search_term": "Brasília DF",
-    "bairro": null,
     "group_ids": [
       "3472477749739828",
-      "578049284042411",
+      "1002051778420845",
       "512174575476547",
       "544560430768845",
-      "1029065761523492",
-      "672328276132511",
       "138334086805338",
-      "1008161639232670",
+      "1029065761523492",
+      "110954989246687",
       "177287232312262",
+      "672328276132511",
       "1430547060568724"
     ],
     "group_details": [
@@ -379,9 +163,9 @@
         "url": "https://www.facebook.com/groups/3472477749739828/"
       },
       {
-        "id": "578049284042411",
-        "name": "OLX Brasília & Entorno DF-GO",
-        "url": "https://www.facebook.com/groups/578049284042411/"
+        "id": "1002051778420845",
+        "name": "Fazendas em todo brasil - Compra e Venda",
+        "url": "https://www.facebook.com/groups/1002051778420845/"
       },
       {
         "id": "512174575476547",
@@ -394,29 +178,29 @@
         "url": "https://www.facebook.com/groups/544560430768845/"
       },
       {
-        "id": "1029065761523492",
-        "name": "Brasília Compra e Venda",
-        "url": "https://www.facebook.com/groups/1029065761523492/"
-      },
-      {
-        "id": "672328276132511",
-        "name": "Brasília DF mercado livre",
-        "url": "https://www.facebook.com/groups/672328276132511/"
-      },
-      {
         "id": "138334086805338",
         "name": "Aluguel de imóveis no DF - Direto com proprietário - Sem fiador!",
         "url": "https://www.facebook.com/groups/138334086805338/"
       },
       {
-        "id": "1008161639232670",
-        "name": "VENDAS E TROCAS Brasília-DF!!",
-        "url": "https://www.facebook.com/groups/1008161639232670/"
+        "id": "1029065761523492",
+        "name": "Brasília Compra e Venda",
+        "url": "https://www.facebook.com/groups/1029065761523492/"
+      },
+      {
+        "id": "110954989246687",
+        "name": "Venda de imóveis no Guará DF",
+        "url": "https://www.facebook.com/groups/110954989246687/"
       },
       {
         "id": "177287232312262",
         "name": "Compra, Venda e Aluguel de imóveis DF",
         "url": "https://www.facebook.com/groups/177287232312262/"
+      },
+      {
+        "id": "672328276132511",
+        "name": "Brasília DF mercado livre",
+        "url": "https://www.facebook.com/groups/672328276132511/"
       },
       {
         "id": "1430547060568724",
@@ -430,17 +214,16 @@
     "state": "RJ",
     "type": "city",
     "search_term": "Janeiro RJ",
-    "bairro": null,
     "group_ids": [
       "267932602612157",
       "139638426187546",
-      "1819644411615570",
       "1008386497889162",
-      "746608938793612",
-      "427729870719893",
-      "967832216603467",
-      "323866948749057",
       "278858805598142",
+      "323866948749057",
+      "746608938793612",
+      "967832216603467",
+      "1819644411615570",
+      "427729870719893",
       "1389351485314436"
     ],
     "group_details": [
@@ -455,29 +238,14 @@
         "url": "https://www.facebook.com/groups/139638426187546/"
       },
       {
-        "id": "1819644411615570",
-        "name": "Aluguel Imóveis Zona Norte Rio de Janeiro",
-        "url": "https://www.facebook.com/groups/1819644411615570/"
-      },
-      {
         "id": "1008386497889162",
         "name": "VENDA, TROCA, ALUGA-SE CASAS NO RIO DE JANEIRO",
         "url": "https://www.facebook.com/groups/1008386497889162/"
       },
       {
-        "id": "746608938793612",
-        "name": "ALUGUEL APARTAMENTO - RIO DE JANEIRO",
-        "url": "https://www.facebook.com/groups/746608938793612/"
-      },
-      {
-        "id": "427729870719893",
-        "name": "Venda e Aluguel de Imóveis - Zona Sul e Centro - Rio de Janeiro",
-        "url": "https://www.facebook.com/groups/427729870719893/"
-      },
-      {
-        "id": "967832216603467",
-        "name": "Aluguel e Venda de Imóveis - Niterói - RJ",
-        "url": "https://www.facebook.com/groups/967832216603467/"
+        "id": "278858805598142",
+        "name": "Imóveis em campo grande rj",
+        "url": "https://www.facebook.com/groups/278858805598142/"
       },
       {
         "id": "323866948749057",
@@ -485,9 +253,24 @@
         "url": "https://www.facebook.com/groups/323866948749057/"
       },
       {
-        "id": "278858805598142",
-        "name": "Imóveis em campo grande rj",
-        "url": "https://www.facebook.com/groups/278858805598142/"
+        "id": "746608938793612",
+        "name": "ALUGUEL APARTAMENTO - RIO DE JANEIRO",
+        "url": "https://www.facebook.com/groups/746608938793612/"
+      },
+      {
+        "id": "967832216603467",
+        "name": "Aluguel e Venda de Imóveis - Niterói - RJ",
+        "url": "https://www.facebook.com/groups/967832216603467/"
+      },
+      {
+        "id": "1819644411615570",
+        "name": "Aluguel Imóveis Zona Norte Rio de Janeiro",
+        "url": "https://www.facebook.com/groups/1819644411615570/"
+      },
+      {
+        "id": "427729870719893",
+        "name": "Venda e Aluguel de Imóveis - Zona Sul e Centro - Rio de Janeiro",
+        "url": "https://www.facebook.com/groups/427729870719893/"
       },
       {
         "id": "1389351485314436",
@@ -501,18 +284,17 @@
     "state": "SP",
     "type": "city",
     "search_term": "Paulo SP",
-    "bairro": null,
     "group_ids": [
       "353783500632454",
-      "1312757045486383",
       "3630876853904493",
-      "2421592694770375",
-      "1711182952539528",
-      "1425590297587027",
+      "1312757045486383",
       "1462450237381654",
-      "1600618146887233",
-      "125048032789325",
-      "937722058204370"
+      "1425590297587027",
+      "1711182952539528",
+      "562004211288085",
+      "1357090537646935",
+      "1406722516288649",
+      "350462705092358"
     ],
     "group_details": [
       {
@@ -521,29 +303,14 @@
         "url": "https://www.facebook.com/groups/353783500632454/"
       },
       {
-        "id": "1312757045486383",
-        "name": "IMÓVEIS: VENDER, COMPRAR, ALUGAR OU TROCAR EM SÃO PAULO",
-        "url": "https://www.facebook.com/groups/1312757045486383/"
-      },
-      {
         "id": "3630876853904493",
         "name": "IMÓVEIS EM SÃO PAULO",
         "url": "https://www.facebook.com/groups/3630876853904493/"
       },
       {
-        "id": "2421592694770375",
-        "name": "SÓ IMÓVEIS",
-        "url": "https://www.facebook.com/groups/2421592694770375/"
-      },
-      {
-        "id": "1711182952539528",
-        "name": "Aluga-se ou vende-se em São Paulo Capital",
-        "url": "https://www.facebook.com/groups/1711182952539528/"
-      },
-      {
-        "id": "1425590297587027",
-        "name": "São Paulo SP - Negócios Imobiliários",
-        "url": "https://www.facebook.com/groups/1425590297587027/"
+        "id": "1312757045486383",
+        "name": "IMÓVEIS: VENDER, COMPRAR, ALUGAR OU TROCAR EM SÃO PAULO",
+        "url": "https://www.facebook.com/groups/1312757045486383/"
       },
       {
         "id": "1462450237381654",
@@ -551,19 +318,34 @@
         "url": "https://www.facebook.com/groups/1462450237381654/"
       },
       {
-        "id": "1600618146887233",
-        "name": "Anuncio de Imóveis São Paulo e Região - MercadoClassificado",
-        "url": "https://www.facebook.com/groups/1600618146887233/"
+        "id": "1425590297587027",
+        "name": "São Paulo SP - Negócios Imobiliários",
+        "url": "https://www.facebook.com/groups/1425590297587027/"
       },
       {
-        "id": "125048032789325",
-        "name": "locação e venda de Imóveis direto com proprietário em São Paulo",
-        "url": "https://www.facebook.com/groups/125048032789325/"
+        "id": "1711182952539528",
+        "name": "Aluga-se ou vende-se em São Paulo Capital",
+        "url": "https://www.facebook.com/groups/1711182952539528/"
       },
       {
-        "id": "937722058204370",
-        "name": "VENDA DE IMÓVEIS SÃO PAULO SP",
-        "url": "https://www.facebook.com/groups/937722058204370/"
+        "id": "562004211288085",
+        "name": "Aluguel de apartamentos mobiliados em São Paulo (Brasil)",
+        "url": "https://www.facebook.com/groups/562004211288085/"
+      },
+      {
+        "id": "1357090537646935",
+        "name": "Alugar rápido São Paulo",
+        "url": "https://www.facebook.com/groups/1357090537646935/"
+      },
+      {
+        "id": "1406722516288649",
+        "name": "Aluguel imoveis São Paulo",
+        "url": "https://www.facebook.com/groups/1406722516288649/"
+      },
+      {
+        "id": "350462705092358",
+        "name": "Imóveis em São Paulo",
+        "url": "https://www.facebook.com/groups/350462705092358/"
       }
     ]
   },
@@ -572,44 +354,33 @@
     "state": "RJ",
     "type": "city",
     "search_term": "Jacarepaguá RJ",
-    "bairro": null,
     "group_ids": [
-      "324624578789926",
       "1822483821352531",
+      "324624578789926",
       "3121212754588910",
-      "2102242643119961",
-      "446140159762455",
       "292788034837008",
       "367017873424533",
       "1808839059441804",
       "724518743105134",
-      "1751427231747732"
+      "446140159762455",
+      "402063009952799",
+      "982641885165507"
     ],
     "group_details": [
-      {
-        "id": "324624578789926",
-        "name": "alugar casa em Jacarepaguá RJ.",
-        "url": "https://www.facebook.com/groups/324624578789926/"
-      },
       {
         "id": "1822483821352531",
         "name": "Só Casa e Kitnet ( Jacarepaguá ) ( Taquara )",
         "url": "https://www.facebook.com/groups/1822483821352531/"
       },
       {
+        "id": "324624578789926",
+        "name": "alugar casa em Jacarepaguá RJ.",
+        "url": "https://www.facebook.com/groups/324624578789926/"
+      },
+      {
         "id": "3121212754588910",
         "name": "Vendas,trocas e aluguéis CDD/Jacarepaguá",
         "url": "https://www.facebook.com/groups/3121212754588910/"
-      },
-      {
-        "id": "2102242643119961",
-        "name": "joga pra rolo jacarepaguá",
-        "url": "https://www.facebook.com/groups/2102242643119961/"
-      },
-      {
-        "id": "446140159762455",
-        "name": "Joga pra rolo Jacarepaguá",
-        "url": "https://www.facebook.com/groups/446140159762455/"
       },
       {
         "id": "292788034837008",
@@ -632,9 +403,19 @@
         "url": "https://www.facebook.com/groups/724518743105134/"
       },
       {
-        "id": "1751427231747732",
-        "name": "Bom Negócio - Jacarepaguá",
-        "url": "https://www.facebook.com/groups/1751427231747732/"
+        "id": "446140159762455",
+        "name": "Joga pra rolo Jacarepaguá",
+        "url": "https://www.facebook.com/groups/446140159762455/"
+      },
+      {
+        "id": "402063009952799",
+        "name": "Jacarepaguá",
+        "url": "https://www.facebook.com/groups/402063009952799/"
+      },
+      {
+        "id": "982641885165507",
+        "name": "Moradores de Jacarepagua",
+        "url": "https://www.facebook.com/groups/982641885165507/"
       }
     ]
   },
@@ -643,29 +424,28 @@
     "state": "RN",
     "type": "city",
     "search_term": "Natal RN",
-    "bairro": null,
     "group_ids": [
-      "169754239799751",
       "2073023192911784",
+      "169754239799751",
       "938356439557671",
-      "345473102138835",
       "260777085618037",
+      "345473102138835",
       "1629014270588031",
       "1416321688683542",
-      "1636563363240111",
+      "117952685341616",
       "838535949501191",
-      "1671734279783612"
+      "1636563363240111"
     ],
     "group_details": [
-      {
-        "id": "169754239799751",
-        "name": "🏠 ALUGUEL, COMPRA E VENDA DE IMÓVEIS EM NATAL - RN",
-        "url": "https://www.facebook.com/groups/169754239799751/"
-      },
       {
         "id": "2073023192911784",
         "name": "Aluguel direto (Natal-RN)",
         "url": "https://www.facebook.com/groups/2073023192911784/"
+      },
+      {
+        "id": "169754239799751",
+        "name": "🏠 ALUGUEL, COMPRA E VENDA DE IMÓVEIS EM NATAL - RN",
+        "url": "https://www.facebook.com/groups/169754239799751/"
       },
       {
         "id": "938356439557671",
@@ -673,14 +453,14 @@
         "url": "https://www.facebook.com/groups/938356439557671/"
       },
       {
-        "id": "345473102138835",
-        "name": "Classificados de Imóveis Natal-RN",
-        "url": "https://www.facebook.com/groups/345473102138835/"
-      },
-      {
         "id": "260777085618037",
         "name": "NATAL-RN",
         "url": "https://www.facebook.com/groups/260777085618037/"
+      },
+      {
+        "id": "345473102138835",
+        "name": "Classificados de Imóveis Natal-RN",
+        "url": "https://www.facebook.com/groups/345473102138835/"
       },
       {
         "id": "1629014270588031",
@@ -693,9 +473,9 @@
         "url": "https://www.facebook.com/groups/1416321688683542/"
       },
       {
-        "id": "1636563363240111",
-        "name": "CLASSIFICADOS EM NATAL - RN84",
-        "url": "https://www.facebook.com/groups/1636563363240111/"
+        "id": "117952685341616",
+        "name": "VENDA E ALUGUEL DE IMOVEIS NATAL RN",
+        "url": "https://www.facebook.com/groups/117952685341616/"
       },
       {
         "id": "838535949501191",
@@ -703,9 +483,9 @@
         "url": "https://www.facebook.com/groups/838535949501191/"
       },
       {
-        "id": "1671734279783612",
-        "name": "Desapega Casas&Terrenos - Natal-RN e adjacências",
-        "url": "https://www.facebook.com/groups/1671734279783612/"
+        "id": "1636563363240111",
+        "name": "CLASSIFICADOS EM NATAL - RN84",
+        "url": "https://www.facebook.com/groups/1636563363240111/"
       }
     ]
   },
@@ -714,17 +494,16 @@
     "state": "PR",
     "type": "city",
     "search_term": "Curitiba PR",
-    "bairro": null,
     "group_ids": [
       "3062870217294335",
-      "112797368925124",
       "475288289274408",
+      "348481436061103",
       "1413652495579159",
       "416642188460989",
-      "314043949721427",
-      "142387275936424",
-      "362328283969163",
-      "606623736123062",
+      "744221435659229",
+      "112797368925124",
+      "1333640310099964",
+      "790164395555165",
       "406861759415118"
     ],
     "group_details": [
@@ -734,14 +513,14 @@
         "url": "https://www.facebook.com/groups/3062870217294335/"
       },
       {
-        "id": "112797368925124",
-        "name": "Direto com o proprietário - Curitiba",
-        "url": "https://www.facebook.com/groups/112797368925124/"
-      },
-      {
         "id": "475288289274408",
         "name": "Alugar, Vender e negociar imóvel em curitiba",
         "url": "https://www.facebook.com/groups/475288289274408/"
+      },
+      {
+        "id": "348481436061103",
+        "name": "Aluguel Direto Curitiba | Imóveis e Quartos",
+        "url": "https://www.facebook.com/groups/348481436061103/"
       },
       {
         "id": "1413652495579159",
@@ -754,24 +533,24 @@
         "url": "https://www.facebook.com/groups/416642188460989/"
       },
       {
-        "id": "314043949721427",
-        "name": "VENDA e PERMUTA Imóveis Curitiba.",
-        "url": "https://www.facebook.com/groups/314043949721427/"
+        "id": "744221435659229",
+        "name": "ALUGUEL EM CURITIBA E REGIÃO",
+        "url": "https://www.facebook.com/groups/744221435659229/"
       },
       {
-        "id": "142387275936424",
-        "name": "Imóveis Locação e Venda Curitiba e Região",
-        "url": "https://www.facebook.com/groups/142387275936424/"
+        "id": "112797368925124",
+        "name": "Direto com o proprietário - Curitiba",
+        "url": "https://www.facebook.com/groups/112797368925124/"
       },
       {
-        "id": "362328283969163",
-        "name": "ALUGUEL DE APARTAMENTO EM CASA CURITIBA",
-        "url": "https://www.facebook.com/groups/362328283969163/"
+        "id": "1333640310099964",
+        "name": "aluguel direto com o proprietário em Curitiba e região.",
+        "url": "https://www.facebook.com/groups/1333640310099964/"
       },
       {
-        "id": "606623736123062",
-        "name": "AQUI IMÓVEIS CURITIBA E REGIÃO",
-        "url": "https://www.facebook.com/groups/606623736123062/"
+        "id": "790164395555165",
+        "name": "Casas para alugar em Curitiba",
+        "url": "https://www.facebook.com/groups/790164395555165/"
       },
       {
         "id": "406861759415118",
@@ -785,18 +564,17 @@
     "state": "PB",
     "type": "city",
     "search_term": "Pessoa PB",
-    "bairro": null,
     "group_ids": [
       "730886017703068",
       "678603367367082",
       "650528939658122",
-      "1354539131585117",
-      "988870378244733",
-      "189263592330100",
-      "1390556161163555",
       "462076824993059",
-      "2421592694770375",
-      "627871235026508"
+      "1354539131585117",
+      "372105478369612",
+      "988870378244733",
+      "1476126819367291",
+      "1125053899204835",
+      "759761177003416"
     ],
     "group_details": [
       {
@@ -815,9 +593,19 @@
         "url": "https://www.facebook.com/groups/650528939658122/"
       },
       {
+        "id": "462076824993059",
+        "name": "Aluguel de Kitnets / João Pessoa-PB",
+        "url": "https://www.facebook.com/groups/462076824993059/"
+      },
+      {
         "id": "1354539131585117",
         "name": "imóveis a venda em João pessoa",
         "url": "https://www.facebook.com/groups/1354539131585117/"
+      },
+      {
+        "id": "372105478369612",
+        "name": "IMÓVEIS JOÃO PESSOA",
+        "url": "https://www.facebook.com/groups/372105478369612/"
       },
       {
         "id": "988870378244733",
@@ -825,29 +613,19 @@
         "url": "https://www.facebook.com/groups/988870378244733/"
       },
       {
-        "id": "189263592330100",
-        "name": "GRUPO EXCLUSIVO DE IMÓVEIS EM JOÃO PESSOA/PB",
-        "url": "https://www.facebook.com/groups/189263592330100/"
+        "id": "1476126819367291",
+        "name": "PARCERIAS IMOBILIÁRIAS - JOÃO PESSOA/PB",
+        "url": "https://www.facebook.com/groups/1476126819367291/"
       },
       {
-        "id": "1390556161163555",
-        "name": "Negócios Imobiliários",
-        "url": "https://www.facebook.com/groups/1390556161163555/"
+        "id": "1125053899204835",
+        "name": "Apartamentos e casas � em João Pessoa",
+        "url": "https://www.facebook.com/groups/1125053899204835/"
       },
       {
-        "id": "462076824993059",
-        "name": "Aluguel de Kitnets / João Pessoa-PB",
-        "url": "https://www.facebook.com/groups/462076824993059/"
-      },
-      {
-        "id": "2421592694770375",
-        "name": "SÓ IMÓVEIS",
-        "url": "https://www.facebook.com/groups/2421592694770375/"
-      },
-      {
-        "id": "627871235026508",
-        "name": "Imóveis nos Bancários - João Pessoa-PB",
-        "url": "https://www.facebook.com/groups/627871235026508/"
+        "id": "759761177003416",
+        "name": "GRUPO IMOBILIÁRIO compra e venda.",
+        "url": "https://www.facebook.com/groups/759761177003416/"
       }
     ]
   },
@@ -856,24 +634,23 @@
     "state": "SP",
     "type": "city",
     "search_term": "Campinas SP",
-    "bairro": null,
     "group_ids": [
-      "478958175585106",
-      "746381090469402",
       "769432750365913",
-      "585342064859489",
+      "746381090469402",
+      "478958175585106",
       "718230786283345",
-      "679290124780920",
-      "1090978760977502",
       "392724724232422",
+      "1090978760977502",
+      "679290124780920",
+      "1804910326842381",
       "2449299932046657",
-      "366629833517778"
+      "1181749210276570"
     ],
     "group_details": [
       {
-        "id": "478958175585106",
-        "name": "ALUGA IMOVEIS CAMPINAS",
-        "url": "https://www.facebook.com/groups/478958175585106/"
+        "id": "769432750365913",
+        "name": "ALUGUEL DE CASAS CAMPINAS E REGIAO",
+        "url": "https://www.facebook.com/groups/769432750365913/"
       },
       {
         "id": "746381090469402",
@@ -881,14 +658,9 @@
         "url": "https://www.facebook.com/groups/746381090469402/"
       },
       {
-        "id": "769432750365913",
-        "name": "ALUGUEL DE CASAS CAMPINAS E REGIAO",
-        "url": "https://www.facebook.com/groups/769432750365913/"
-      },
-      {
-        "id": "585342064859489",
-        "name": "IMOVEIS CAMPINAS",
-        "url": "https://www.facebook.com/groups/585342064859489/"
+        "id": "478958175585106",
+        "name": "ALUGA IMOVEIS CAMPINAS",
+        "url": "https://www.facebook.com/groups/478958175585106/"
       },
       {
         "id": "718230786283345",
@@ -896,9 +668,9 @@
         "url": "https://www.facebook.com/groups/718230786283345/"
       },
       {
-        "id": "679290124780920",
-        "name": "Venda Imóveis em Campinas e Região",
-        "url": "https://www.facebook.com/groups/679290124780920/"
+        "id": "392724724232422",
+        "name": "IMÓVEIS À VENDA EM CAMPINAS E REGIÃO",
+        "url": "https://www.facebook.com/groups/392724724232422/"
       },
       {
         "id": "1090978760977502",
@@ -906,9 +678,14 @@
         "url": "https://www.facebook.com/groups/1090978760977502/"
       },
       {
-        "id": "392724724232422",
-        "name": "IMÓVEIS À VENDA EM CAMPINAS E REGIÃO",
-        "url": "https://www.facebook.com/groups/392724724232422/"
+        "id": "679290124780920",
+        "name": "Venda Imóveis em Campinas e Região",
+        "url": "https://www.facebook.com/groups/679290124780920/"
+      },
+      {
+        "id": "1804910326842381",
+        "name": "Imóveis em Campinas - Venda",
+        "url": "https://www.facebook.com/groups/1804910326842381/"
       },
       {
         "id": "2449299932046657",
@@ -916,9 +693,9 @@
         "url": "https://www.facebook.com/groups/2449299932046657/"
       },
       {
-        "id": "366629833517778",
-        "name": "IMÓVEIS VENDA, SUMARÉ, HORTOLÂNDIA, NOVA ODESSA E PAULÍNIA.",
-        "url": "https://www.facebook.com/groups/366629833517778/"
+        "id": "1181749210276570",
+        "name": "vendas e aluguel de casas Campinas SP",
+        "url": "https://www.facebook.com/groups/1181749210276570/"
       }
     ]
   },
@@ -927,18 +704,17 @@
     "state": "BA",
     "type": "city",
     "search_term": "Santana BA",
-    "bairro": null,
     "group_ids": [
       "591036756976229",
       "861737253937359",
+      "848982027212387",
       "1391876951142878",
       "886977088006049",
-      "848982027212387",
-      "465957476863663",
-      "1810430725732826",
+      "5328564303888652",
       "629462533831621",
+      "1709276312713836",
       "231124760565635",
-      "1709276312713836"
+      "465957476863663"
     ],
     "group_details": [
       {
@@ -952,6 +728,11 @@
         "url": "https://www.facebook.com/groups/861737253937359/"
       },
       {
+        "id": "848982027212387",
+        "name": "Compra e Venda de Imóveis Direto com Proprietário",
+        "url": "https://www.facebook.com/groups/848982027212387/"
+      },
+      {
         "id": "1391876951142878",
         "name": "Compra, Venda, Permuta e Locação de Imóveis Baixada Santista",
         "url": "https://www.facebook.com/groups/1391876951142878/"
@@ -962,19 +743,9 @@
         "url": "https://www.facebook.com/groups/886977088006049/"
       },
       {
-        "id": "848982027212387",
-        "name": "Compra e Venda de Imóveis Direto com Proprietário",
-        "url": "https://www.facebook.com/groups/848982027212387/"
-      },
-      {
-        "id": "465957476863663",
-        "name": "Bairro De Santana/zn",
-        "url": "https://www.facebook.com/groups/465957476863663/"
-      },
-      {
-        "id": "1810430725732826",
-        "name": "Classificados Compra, Venda e Locação de Imóveis em Santa Fé do Sul - SP",
-        "url": "https://www.facebook.com/groups/1810430725732826/"
+        "id": "5328564303888652",
+        "name": "SÓ IMÓVEL SANTA FÉ E REGIÃO",
+        "url": "https://www.facebook.com/groups/5328564303888652/"
       },
       {
         "id": "629462533831621",
@@ -982,14 +753,19 @@
         "url": "https://www.facebook.com/groups/629462533831621/"
       },
       {
+        "id": "1709276312713836",
+        "name": "Imóveis - Compra Venda Aluguel",
+        "url": "https://www.facebook.com/groups/1709276312713836/"
+      },
+      {
         "id": "231124760565635",
         "name": "locação de imóveis - particular e imobiliária",
         "url": "https://www.facebook.com/groups/231124760565635/"
       },
       {
-        "id": "1709276312713836",
-        "name": "Imóveis - Compra Venda Aluguel",
-        "url": "https://www.facebook.com/groups/1709276312713836/"
+        "id": "465957476863663",
+        "name": "Bairro De Santana/zn",
+        "url": "https://www.facebook.com/groups/465957476863663/"
       }
     ]
   },
@@ -998,17 +774,16 @@
     "state": "BA",
     "type": "city",
     "search_term": "Camaçari BA",
-    "bairro": null,
     "group_ids": [
       "324869326903863",
       "8638736449551224",
-      "383200198689909",
       "8716938165081656",
       "1087844783539177",
-      "1709276312713836",
-      "1435215196917941",
-      "231124760565635",
+      "383200198689909",
       "252855051817136",
+      "1709276312713836",
+      "231124760565635",
+      "1435215196917941",
       "848982027212387"
     ],
     "group_details": [
@@ -1023,11 +798,6 @@
         "url": "https://www.facebook.com/groups/8638736449551224/"
       },
       {
-        "id": "383200198689909",
-        "name": "Aluga e vende casas e apartamentos de camaçari",
-        "url": "https://www.facebook.com/groups/383200198689909/"
-      },
-      {
         "id": "8716938165081656",
         "name": "LOCAÇÃO E VENDA CAMAÇARI E ADJACÊNCIAS.",
         "url": "https://www.facebook.com/groups/8716938165081656/"
@@ -1038,14 +808,19 @@
         "url": "https://www.facebook.com/groups/1087844783539177/"
       },
       {
+        "id": "383200198689909",
+        "name": "Aluga e vende casas e apartamentos de camaçari",
+        "url": "https://www.facebook.com/groups/383200198689909/"
+      },
+      {
+        "id": "252855051817136",
+        "name": "compras e vendas de casas e terreno Camaçari e regiões",
+        "url": "https://www.facebook.com/groups/252855051817136/"
+      },
+      {
         "id": "1709276312713836",
         "name": "Imóveis - Compra Venda Aluguel",
         "url": "https://www.facebook.com/groups/1709276312713836/"
-      },
-      {
-        "id": "1435215196917941",
-        "name": "Imobiliária Vendas, Locações e Aluguéis de Casas e Apartamentos.",
-        "url": "https://www.facebook.com/groups/1435215196917941/"
       },
       {
         "id": "231124760565635",
@@ -1053,9 +828,9 @@
         "url": "https://www.facebook.com/groups/231124760565635/"
       },
       {
-        "id": "252855051817136",
-        "name": "compras e vendas de casas e terreno Camaçari e regiões",
-        "url": "https://www.facebook.com/groups/252855051817136/"
+        "id": "1435215196917941",
+        "name": "Imobiliária Vendas, Locações e Aluguéis de Casas e Apartamentos.",
+        "url": "https://www.facebook.com/groups/1435215196917941/"
       },
       {
         "id": "848982027212387",
@@ -1069,18 +844,17 @@
     "state": "BA",
     "type": "city",
     "search_term": "Barreiras BA",
-    "bairro": null,
     "group_ids": [
       "3476342615964282",
       "1741182799475506",
-      "678242505676182",
       "1548863948724928",
-      "388029678459144",
-      "940542261893023",
       "322675271602484",
-      "1895288584063748",
+      "388029678459144",
       "1752140968407863",
-      "290149347749541"
+      "940542261893023",
+      "1895288584063748",
+      "555178366031038",
+      "686142654765169"
     ],
     "group_details": [
       {
@@ -1094,24 +868,9 @@
         "url": "https://www.facebook.com/groups/1741182799475506/"
       },
       {
-        "id": "678242505676182",
-        "name": "ALUGA-SE CASAS em BARRETOS/SP",
-        "url": "https://www.facebook.com/groups/678242505676182/"
-      },
-      {
         "id": "1548863948724928",
         "name": "Seu imóvel em Barretos",
         "url": "https://www.facebook.com/groups/1548863948724928/"
-      },
-      {
-        "id": "388029678459144",
-        "name": "OLX BARREIRAS VENDA E TROCA",
-        "url": "https://www.facebook.com/groups/388029678459144/"
-      },
-      {
-        "id": "940542261893023",
-        "name": "Casas prá alugar você 🫵 encontra aqui Barretos SP",
-        "url": "https://www.facebook.com/groups/940542261893023/"
       },
       {
         "id": "322675271602484",
@@ -1119,9 +878,9 @@
         "url": "https://www.facebook.com/groups/322675271602484/"
       },
       {
-        "id": "1895288584063748",
-        "name": "OLX BARREIRAS E REGIÃO BAHIA 🇧🇷",
-        "url": "https://www.facebook.com/groups/1895288584063748/"
+        "id": "388029678459144",
+        "name": "OLX BARREIRAS VENDA E TROCA",
+        "url": "https://www.facebook.com/groups/388029678459144/"
       },
       {
         "id": "1752140968407863",
@@ -1129,9 +888,24 @@
         "url": "https://www.facebook.com/groups/1752140968407863/"
       },
       {
-        "id": "290149347749541",
-        "name": "CLASSIFICADOS DE PEREIRA BARRETO",
-        "url": "https://www.facebook.com/groups/290149347749541/"
+        "id": "940542261893023",
+        "name": "Casas prá alugar você 🫵 encontra aqui Barretos SP",
+        "url": "https://www.facebook.com/groups/940542261893023/"
+      },
+      {
+        "id": "1895288584063748",
+        "name": "OLX BARREIRAS E REGIÃO BAHIA 🇧🇷",
+        "url": "https://www.facebook.com/groups/1895288584063748/"
+      },
+      {
+        "id": "555178366031038",
+        "name": "Aluguel e Venda de Imoveis (Barreiras-Ba)",
+        "url": "https://www.facebook.com/groups/555178366031038/"
+      },
+      {
+        "id": "686142654765169",
+        "name": "CLASSIFICADOS BARRETOS / SP (IMÓVEIS: CASA, APARTAMENTO, TERRENO, CHÁCARA))",
+        "url": "https://www.facebook.com/groups/686142654765169/"
       }
     ]
   },
@@ -1140,29 +914,23 @@
     "state": "SC",
     "type": "city",
     "search_term": "José SC",
-    "bairro": null,
     "group_ids": [
       "1607128180332772",
-      "1119329866243210",
       "473258054694938",
       "848252428954916",
       "2664354250396276",
       "265102866928704",
-      "138827778307778",
-      "1653060044800480",
       "119102495399270",
-      "401727979888673"
+      "138827778307778",
+      "1660919627462657",
+      "280882816014151",
+      "472157245384616"
     ],
     "group_details": [
       {
         "id": "1607128180332772",
         "name": "Aluguel São José SC",
         "url": "https://www.facebook.com/groups/1607128180332772/"
-      },
-      {
-        "id": "1119329866243210",
-        "name": "Classificados São José-SC",
-        "url": "https://www.facebook.com/groups/1119329866243210/"
       },
       {
         "id": "473258054694938",
@@ -1185,24 +953,29 @@
         "url": "https://www.facebook.com/groups/265102866928704/"
       },
       {
-        "id": "138827778307778",
-        "name": "ALUGUEIS EM SÃO JOSÉ SC RESIDENCIAL E REGIÃO",
-        "url": "https://www.facebook.com/groups/138827778307778/"
-      },
-      {
-        "id": "1653060044800480",
-        "name": "Negócios Imobiliários região São José do Rio Preto",
-        "url": "https://www.facebook.com/groups/1653060044800480/"
-      },
-      {
         "id": "119102495399270",
         "name": "Imoveis para Alugar em São José dos Campos",
         "url": "https://www.facebook.com/groups/119102495399270/"
       },
       {
-        "id": "401727979888673",
-        "name": "OFERTAS DE IMÓVEIS EM SÃO JOSÉ DOS CAMPOS",
-        "url": "https://www.facebook.com/groups/401727979888673/"
+        "id": "138827778307778",
+        "name": "ALUGUEIS EM SÃO JOSÉ SC RESIDENCIAL E REGIÃO",
+        "url": "https://www.facebook.com/groups/138827778307778/"
+      },
+      {
+        "id": "1660919627462657",
+        "name": "Aluguel Palhoça e São José",
+        "url": "https://www.facebook.com/groups/1660919627462657/"
+      },
+      {
+        "id": "280882816014151",
+        "name": "Aluguel Palhoça, São José, Florianópolis, Biguaçu, direto com proprietário",
+        "url": "https://www.facebook.com/groups/280882816014151/"
+      },
+      {
+        "id": "472157245384616",
+        "name": "Alugueis São José - SC",
+        "url": "https://www.facebook.com/groups/472157245384616/"
       }
     ]
   },
@@ -1211,18 +984,17 @@
     "state": "SP",
     "type": "city",
     "search_term": "Preto SP",
-    "bairro": null,
     "group_ids": [
       "6189873401060219",
       "307526512992233",
+      "716548046447078",
+      "413671432167041",
       "725777564612309",
       "218145011856001",
-      "716548046447078",
-      "661671595037136",
-      "642891259063811",
       "2995806247271339",
-      "850238701726467",
-      "2421592694770375"
+      "661671595037136",
+      "590736414328666",
+      "962747927100689"
     ],
     "group_details": [
       {
@@ -1236,6 +1008,16 @@
         "url": "https://www.facebook.com/groups/307526512992233/"
       },
       {
+        "id": "716548046447078",
+        "name": "Aluga-se Imóveis em Rio Preto",
+        "url": "https://www.facebook.com/groups/716548046447078/"
+      },
+      {
+        "id": "413671432167041",
+        "name": "Classificados de Imóveis em Ribeirão Preto SP",
+        "url": "https://www.facebook.com/groups/413671432167041/"
+      },
+      {
         "id": "725777564612309",
         "name": "Imóveis a venda em São José do Rio Preto e Região",
         "url": "https://www.facebook.com/groups/725777564612309/"
@@ -1246,9 +1028,9 @@
         "url": "https://www.facebook.com/groups/218145011856001/"
       },
       {
-        "id": "716548046447078",
-        "name": "Aluga-se Imóveis em Rio Preto",
-        "url": "https://www.facebook.com/groups/716548046447078/"
+        "id": "2995806247271339",
+        "name": "Casa Direto com proprietário Ribeirão Preto Sp",
+        "url": "https://www.facebook.com/groups/2995806247271339/"
       },
       {
         "id": "661671595037136",
@@ -1256,24 +1038,14 @@
         "url": "https://www.facebook.com/groups/661671595037136/"
       },
       {
-        "id": "642891259063811",
-        "name": "SÓ IMÓVEIS RIO PRETO",
-        "url": "https://www.facebook.com/groups/642891259063811/"
+        "id": "590736414328666",
+        "name": "Locação Rio Preto",
+        "url": "https://www.facebook.com/groups/590736414328666/"
       },
       {
-        "id": "2995806247271339",
-        "name": "Casa Direto com proprietário Ribeirão Preto Sp",
-        "url": "https://www.facebook.com/groups/2995806247271339/"
-      },
-      {
-        "id": "850238701726467",
-        "name": "Imóveis São José do Rio Preto",
-        "url": "https://www.facebook.com/groups/850238701726467/"
-      },
-      {
-        "id": "2421592694770375",
-        "name": "SÓ IMÓVEIS",
-        "url": "https://www.facebook.com/groups/2421592694770375/"
+        "id": "962747927100689",
+        "name": "CLASSIFICADOS MEU IMÓVEL - RIO PRETO E REGIÃO",
+        "url": "https://www.facebook.com/groups/962747927100689/"
       }
     ]
   },
@@ -1282,20 +1054,24 @@
     "state": "SP",
     "type": "city",
     "search_term": "Lorena SP",
-    "bairro": null,
     "group_ids": [
+      "1435215196917941",
       "231124760565635",
       "827759767277431",
       "759761177003416",
-      "1628879560986072",
-      "2421592694770375",
       "585500093036805",
-      "1013597310697543",
+      "2421592694770375",
+      "1628879560986072",
       "1031386250667479",
       "550705452530232",
-      "1390556161163555"
+      "265063043547519"
     ],
     "group_details": [
+      {
+        "id": "1435215196917941",
+        "name": "Imobiliária Vendas, Locações e Aluguéis de Casas e Apartamentos.",
+        "url": "https://www.facebook.com/groups/1435215196917941/"
+      },
       {
         "id": "231124760565635",
         "name": "locação de imóveis - particular e imobiliária",
@@ -1312,9 +1088,9 @@
         "url": "https://www.facebook.com/groups/759761177003416/"
       },
       {
-        "id": "1628879560986072",
-        "name": "Locação e venda de imóveis",
-        "url": "https://www.facebook.com/groups/1628879560986072/"
+        "id": "585500093036805",
+        "name": "Casas para alugar - LORENA SP",
+        "url": "https://www.facebook.com/groups/585500093036805/"
       },
       {
         "id": "2421592694770375",
@@ -1322,14 +1098,9 @@
         "url": "https://www.facebook.com/groups/2421592694770375/"
       },
       {
-        "id": "585500093036805",
-        "name": "Casas para alugar - LORENA SP",
-        "url": "https://www.facebook.com/groups/585500093036805/"
-      },
-      {
-        "id": "1013597310697543",
-        "name": "TROCA E VENDAS LORENA SP",
-        "url": "https://www.facebook.com/groups/1013597310697543/"
+        "id": "1628879560986072",
+        "name": "Locação e venda de imóveis",
+        "url": "https://www.facebook.com/groups/1628879560986072/"
       },
       {
         "id": "1031386250667479",
@@ -1342,9 +1113,9 @@
         "url": "https://www.facebook.com/groups/550705452530232/"
       },
       {
-        "id": "1390556161163555",
-        "name": "Negócios Imobiliários",
-        "url": "https://www.facebook.com/groups/1390556161163555/"
+        "id": "265063043547519",
+        "name": "Corretores e Profissionais Imobiliários",
+        "url": "https://www.facebook.com/groups/265063043547519/"
       }
     ]
   },
@@ -1353,17 +1124,16 @@
     "state": "SP",
     "type": "city",
     "search_term": "Bebedouro SP",
-    "bairro": null,
     "group_ids": [
       "1917344815043904",
       "222155641218914",
       "332625123946802",
-      "859721384169497",
-      "896919710330368",
-      "299788133520600",
-      "787232834686501",
       "366804718102998",
-      "543716965686617",
+      "644824776469919",
+      "1590043247908205",
+      "896919710330368",
+      "859721384169497",
+      "787232834686501",
       "1093452076128780"
     ],
     "group_details": [
@@ -1383,9 +1153,19 @@
         "url": "https://www.facebook.com/groups/332625123946802/"
       },
       {
-        "id": "859721384169497",
-        "name": "Bebedouro desapega",
-        "url": "https://www.facebook.com/groups/859721384169497/"
+        "id": "366804718102998",
+        "name": "ALUGUEL CASAS E KITNET BEBEDOURO",
+        "url": "https://www.facebook.com/groups/366804718102998/"
+      },
+      {
+        "id": "644824776469919",
+        "name": "ALUGA SE CASAS . DIRETO COM O PROPRIETÁRIO EM BEBEDOURO SP",
+        "url": "https://www.facebook.com/groups/644824776469919/"
+      },
+      {
+        "id": "1590043247908205",
+        "name": "BOM NEGÓCIO BEBEDOURO-SP",
+        "url": "https://www.facebook.com/groups/1590043247908205/"
       },
       {
         "id": "896919710330368",
@@ -1393,24 +1173,14 @@
         "url": "https://www.facebook.com/groups/896919710330368/"
       },
       {
-        "id": "299788133520600",
-        "name": "Whatsapp Bebedouro - SP",
-        "url": "https://www.facebook.com/groups/299788133520600/"
+        "id": "859721384169497",
+        "name": "Bebedouro desapega",
+        "url": "https://www.facebook.com/groups/859721384169497/"
       },
       {
         "id": "787232834686501",
         "name": "BRECHÓ -BEBEDOURO -SP",
         "url": "https://www.facebook.com/groups/787232834686501/"
-      },
-      {
-        "id": "366804718102998",
-        "name": "ALUGUEL CASAS E KITNET BEBEDOURO",
-        "url": "https://www.facebook.com/groups/366804718102998/"
-      },
-      {
-        "id": "543716965686617",
-        "name": "COMPREI NO FACE BEBEDOURO-SP",
-        "url": "https://www.facebook.com/groups/543716965686617/"
       },
       {
         "id": "1093452076128780",
@@ -1424,18 +1194,17 @@
     "state": "RS",
     "type": "city",
     "search_term": "Leopoldo RS",
-    "bairro": null,
     "group_ids": [
       "1872689382972255",
       "704684439631872",
       "247310349097813",
       "1236836023002743",
       "231124760565635",
-      "1779256035696644",
       "1413791069471569",
       "1683643519426363",
-      "1628879560986072",
-      "1356339187834182"
+      "1356339187834182",
+      "1779256035696644",
+      "1628879560986072"
     ],
     "group_details": [
       {
@@ -1464,11 +1233,6 @@
         "url": "https://www.facebook.com/groups/231124760565635/"
       },
       {
-        "id": "1779256035696644",
-        "name": "NEGÓCIOS IMOBILIÁRIOS RIO CLARO E REGIÃO_COMPRA - VENDA - LOCAÇÃO",
-        "url": "https://www.facebook.com/groups/1779256035696644/"
-      },
-      {
         "id": "1413791069471569",
         "name": "Aluguel de imóvel São Leopoldo Unysinos",
         "url": "https://www.facebook.com/groups/1413791069471569/"
@@ -1479,14 +1243,19 @@
         "url": "https://www.facebook.com/groups/1683643519426363/"
       },
       {
-        "id": "1628879560986072",
-        "name": "Locação e venda de imóveis",
-        "url": "https://www.facebook.com/groups/1628879560986072/"
-      },
-      {
         "id": "1356339187834182",
         "name": "Classificados Compra, Venda e Locação de Imóveis em São Leopoldo - RS",
         "url": "https://www.facebook.com/groups/1356339187834182/"
+      },
+      {
+        "id": "1779256035696644",
+        "name": "NEGÓCIOS IMOBILIÁRIOS RIO CLARO E REGIÃO_COMPRA - VENDA - LOCAÇÃO",
+        "url": "https://www.facebook.com/groups/1779256035696644/"
+      },
+      {
+        "id": "1628879560986072",
+        "name": "Locação e venda de imóveis",
+        "url": "https://www.facebook.com/groups/1628879560986072/"
       }
     ]
   },
@@ -1495,29 +1264,33 @@
     "state": "RN",
     "type": "city",
     "search_term": "Mossoró RN",
-    "bairro": null,
     "group_ids": [
-      "522353832374377",
       "1210850066805833",
+      "522353832374377",
+      "838535949501191",
       "213945795407186",
       "608637542507034",
-      "838535949501191",
+      "606385305254636",
       "199218070244235",
+      "1531334660432908",
       "748957055535721",
-      "770919662979515",
-      "759761177003416",
-      "721110804709696"
+      "770919662979515"
     ],
     "group_details": [
+      {
+        "id": "1210850066805833",
+        "name": "VUCO-VUCO MOSSORÓ -RN",
+        "url": "https://www.facebook.com/groups/1210850066805833/"
+      },
       {
         "id": "522353832374377",
         "name": "Somente aluguel e venda Mossoró - RN",
         "url": "https://www.facebook.com/groups/522353832374377/"
       },
       {
-        "id": "1210850066805833",
-        "name": "VUCO-VUCO MOSSORÓ -RN",
-        "url": "https://www.facebook.com/groups/1210850066805833/"
+        "id": "838535949501191",
+        "name": "Classificados Imobiliários do RN",
+        "url": "https://www.facebook.com/groups/838535949501191/"
       },
       {
         "id": "213945795407186",
@@ -1530,14 +1303,19 @@
         "url": "https://www.facebook.com/groups/608637542507034/"
       },
       {
-        "id": "838535949501191",
-        "name": "Classificados Imobiliários do RN",
-        "url": "https://www.facebook.com/groups/838535949501191/"
+        "id": "606385305254636",
+        "name": "OLX - MOSSORÓ/RN",
+        "url": "https://www.facebook.com/groups/606385305254636/"
       },
       {
         "id": "199218070244235",
         "name": "Imóveis em Mossoró",
         "url": "https://www.facebook.com/groups/199218070244235/"
+      },
+      {
+        "id": "1531334660432908",
+        "name": "Dividir apartamento Mossoró",
+        "url": "https://www.facebook.com/groups/1531334660432908/"
       },
       {
         "id": "748957055535721",
@@ -1548,16 +1326,6 @@
         "id": "770919662979515",
         "name": "VAGAS MOSSORÓ RN 2026",
         "url": "https://www.facebook.com/groups/770919662979515/"
-      },
-      {
-        "id": "759761177003416",
-        "name": "GRUPO IMOBILIÁRIO compra e venda.",
-        "url": "https://www.facebook.com/groups/759761177003416/"
-      },
-      {
-        "id": "721110804709696",
-        "name": "venda e trocas de casas e terreno rn Mossoró",
-        "url": "https://www.facebook.com/groups/721110804709696/"
       }
     ]
   },
@@ -1566,17 +1334,16 @@
     "state": "BA",
     "type": "city",
     "search_term": "Porto Seguro BA",
-    "bairro": null,
     "group_ids": [
       "1530931133920786",
+      "698415333689667",
       "1025284027598361",
-      "2155118574796571",
-      "109312423104243",
       "1759433114365365",
-      "1602916833253587",
-      "341768449689562",
+      "109312423104243",
+      "1064617960236395",
+      "121342608006585",
       "565314496863790",
-      "907329209279184",
+      "1602916833253587",
       "906806002720893"
     ],
     "group_details": [
@@ -1586,19 +1353,14 @@
         "url": "https://www.facebook.com/groups/1530931133920786/"
       },
       {
+        "id": "698415333689667",
+        "name": "Porto seguro venda de terrenos",
+        "url": "https://www.facebook.com/groups/698415333689667/"
+      },
+      {
         "id": "1025284027598361",
         "name": "OLX PORTO SEGURO",
         "url": "https://www.facebook.com/groups/1025284027598361/"
-      },
-      {
-        "id": "2155118574796571",
-        "name": "Divulgações De Imóveis Porto Seguro",
-        "url": "https://www.facebook.com/groups/2155118574796571/"
-      },
-      {
-        "id": "109312423104243",
-        "name": "vendas porto seguro",
-        "url": "https://www.facebook.com/groups/109312423104243/"
       },
       {
         "id": "1759433114365365",
@@ -1606,14 +1368,19 @@
         "url": "https://www.facebook.com/groups/1759433114365365/"
       },
       {
-        "id": "1602916833253587",
-        "name": "Venda e Troca de Porto Seguro",
-        "url": "https://www.facebook.com/groups/1602916833253587/"
+        "id": "109312423104243",
+        "name": "vendas porto seguro",
+        "url": "https://www.facebook.com/groups/109312423104243/"
       },
       {
-        "id": "341768449689562",
-        "name": "PORTO SEGURO ALUGUÉIS",
-        "url": "https://www.facebook.com/groups/341768449689562/"
+        "id": "1064617960236395",
+        "name": "Vendas e Aluguéis de Imóveis, casas temporada e mensal, Porto Seguro -Ba",
+        "url": "https://www.facebook.com/groups/1064617960236395/"
+      },
+      {
+        "id": "121342608006585",
+        "name": "Porto Seguro - Bahia - Brasil",
+        "url": "https://www.facebook.com/groups/121342608006585/"
       },
       {
         "id": "565314496863790",
@@ -1621,9 +1388,9 @@
         "url": "https://www.facebook.com/groups/565314496863790/"
       },
       {
-        "id": "907329209279184",
-        "name": "PORTO SEGURO-BA (ALUGUEL)",
-        "url": "https://www.facebook.com/groups/907329209279184/"
+        "id": "1602916833253587",
+        "name": "Venda e Troca de Porto Seguro",
+        "url": "https://www.facebook.com/groups/1602916833253587/"
       },
       {
         "id": "906806002720893",
@@ -1637,18 +1404,17 @@
     "state": "RJ",
     "type": "city",
     "search_term": "Nilópolis RJ",
-    "bairro": null,
     "group_ids": [
       "369045376579592",
       "811117882247864",
       "490499566067166",
-      "2907144759568721",
       "171860803214204",
-      "287185728064154",
       "444754359039560",
+      "2907144759568721",
       "1805329766173428",
-      "2744592102528573",
-      "927035490807491"
+      "4245648852125429",
+      "942023662488835",
+      "1559436477531556"
     ],
     "group_details": [
       {
@@ -1667,19 +1433,9 @@
         "url": "https://www.facebook.com/groups/490499566067166/"
       },
       {
-        "id": "2907144759568721",
-        "name": "Joga pra Rolo Olinda - Nilópolis",
-        "url": "https://www.facebook.com/groups/2907144759568721/"
-      },
-      {
         "id": "171860803214204",
         "name": "Bazar de Nilópolis e RJ desapego, vendas e trocas!!!",
         "url": "https://www.facebook.com/groups/171860803214204/"
-      },
-      {
-        "id": "287185728064154",
-        "name": "Nilopolis",
-        "url": "https://www.facebook.com/groups/287185728064154/"
       },
       {
         "id": "444754359039560",
@@ -1687,19 +1443,29 @@
         "url": "https://www.facebook.com/groups/444754359039560/"
       },
       {
+        "id": "2907144759568721",
+        "name": "Joga pra Rolo Olinda - Nilópolis",
+        "url": "https://www.facebook.com/groups/2907144759568721/"
+      },
+      {
         "id": "1805329766173428",
         "name": "AIRSOFT BRASIL [NILOPOLIS] RJ",
         "url": "https://www.facebook.com/groups/1805329766173428/"
       },
       {
-        "id": "2744592102528573",
-        "name": "TUDO DE BOM EM NILÓPOLIS - RJ",
-        "url": "https://www.facebook.com/groups/2744592102528573/"
+        "id": "4245648852125429",
+        "name": "Olx Nilópolis",
+        "url": "https://www.facebook.com/groups/4245648852125429/"
       },
       {
-        "id": "927035490807491",
-        "name": "NEGÓCIOS,VENDAS E TROCAS DE NILÓPOLIS",
-        "url": "https://www.facebook.com/groups/927035490807491/"
+        "id": "942023662488835",
+        "name": "Nilópolis Vendas e Trocas (Oficial™)",
+        "url": "https://www.facebook.com/groups/942023662488835/"
+      },
+      {
+        "id": "1559436477531556",
+        "name": "OXL NILÓPOLIS RJ",
+        "url": "https://www.facebook.com/groups/1559436477531556/"
       }
     ]
   },
@@ -1708,34 +1474,33 @@
     "state": "GO",
     "type": "city",
     "search_term": "Goiás GO",
-    "bairro": null,
     "group_ids": [
-      "747147002033712",
-      "723710771051029",
       "2836528416483830",
+      "747147002033712",
+      "2139617352915385",
       "877243212316100",
-      "265575897677526",
-      "1476138102603780",
+      "723710771051029",
       "690510981006466",
       "512217458978057",
-      "1034061346680705",
-      "1827281121503216"
+      "1827281121503216",
+      "1439718522985464",
+      "1476138102603780"
     ],
     "group_details": [
+      {
+        "id": "2836528416483830",
+        "name": "agios de imóveis Goiânia",
+        "url": "https://www.facebook.com/groups/2836528416483830/"
+      },
       {
         "id": "747147002033712",
         "name": "Somente Imoveis de Aluguel - Goiás Velho",
         "url": "https://www.facebook.com/groups/747147002033712/"
       },
       {
-        "id": "723710771051029",
-        "name": "Alugueis e vendas de imóveis- Goiânia e região",
-        "url": "https://www.facebook.com/groups/723710771051029/"
-      },
-      {
-        "id": "2836528416483830",
-        "name": "agios de imóveis Goiânia",
-        "url": "https://www.facebook.com/groups/2836528416483830/"
+        "id": "2139617352915385",
+        "name": "SÓ ÁGIO CASAS E APARTAMENTOS ENTORNO GOIAS",
+        "url": "https://www.facebook.com/groups/2139617352915385/"
       },
       {
         "id": "877243212316100",
@@ -1743,14 +1508,9 @@
         "url": "https://www.facebook.com/groups/877243212316100/"
       },
       {
-        "id": "265575897677526",
-        "name": "OLX 24h Valparaíso de Goiás e Regiao - GO ⭐⭐⭐⭐⭐",
-        "url": "https://www.facebook.com/groups/265575897677526/"
-      },
-      {
-        "id": "1476138102603780",
-        "name": "Imoveis em Valparaiso GO.",
-        "url": "https://www.facebook.com/groups/1476138102603780/"
+        "id": "723710771051029",
+        "name": "Alugueis e vendas de imóveis- Goiânia e região",
+        "url": "https://www.facebook.com/groups/723710771051029/"
       },
       {
         "id": "690510981006466",
@@ -1763,14 +1523,19 @@
         "url": "https://www.facebook.com/groups/512217458978057/"
       },
       {
-        "id": "1034061346680705",
-        "name": "Venda de imóveis em Goiânia e Aparecida",
-        "url": "https://www.facebook.com/groups/1034061346680705/"
-      },
-      {
         "id": "1827281121503216",
         "name": "Compra e venda de imovéis GOIÁS.",
         "url": "https://www.facebook.com/groups/1827281121503216/"
+      },
+      {
+        "id": "1439718522985464",
+        "name": "SOMENTE ALUGUÉIS DE IMÓVEIS_GOIÂNIA",
+        "url": "https://www.facebook.com/groups/1439718522985464/"
+      },
+      {
+        "id": "1476138102603780",
+        "name": "Imoveis em Valparaiso GO.",
+        "url": "https://www.facebook.com/groups/1476138102603780/"
       }
     ]
   },
@@ -1779,24 +1544,28 @@
     "state": "SP",
     "type": "city",
     "search_term": "Bauru SP",
-    "bairro": null,
     "group_ids": [
       "1513714875897184",
+      "305099104041858",
       "1487263221552784",
       "803279393384383",
       "130470603825550",
-      "305099104041858",
-      "399629210138656",
-      "515680167820540",
+      "419920078892084",
       "773161699403310",
-      "384755157164407",
-      "460142850754267"
+      "1309994755699231",
+      "866732956777533",
+      "1142520655772928"
     ],
     "group_details": [
       {
         "id": "1513714875897184",
         "name": "Compras e Vendas em Bauru-SP e Região",
         "url": "https://www.facebook.com/groups/1513714875897184/"
+      },
+      {
+        "id": "305099104041858",
+        "name": "casa para alugar direto com o proprietário bauru",
+        "url": "https://www.facebook.com/groups/305099104041858/"
       },
       {
         "id": "1487263221552784",
@@ -1814,19 +1583,9 @@
         "url": "https://www.facebook.com/groups/130470603825550/"
       },
       {
-        "id": "305099104041858",
-        "name": "casa para alugar direto com o proprietário bauru",
-        "url": "https://www.facebook.com/groups/305099104041858/"
-      },
-      {
-        "id": "399629210138656",
-        "name": "ALUGUEL E VENDA DE IMOVEIS DA REGIÃO DE BAURU SP",
-        "url": "https://www.facebook.com/groups/399629210138656/"
-      },
-      {
-        "id": "515680167820540",
-        "name": "casa para alugar em Bauru/SP",
-        "url": "https://www.facebook.com/groups/515680167820540/"
+        "id": "419920078892084",
+        "name": "Dividir Ap/Casa/Kitnet Bauru e Região",
+        "url": "https://www.facebook.com/groups/419920078892084/"
       },
       {
         "id": "773161699403310",
@@ -1834,14 +1593,19 @@
         "url": "https://www.facebook.com/groups/773161699403310/"
       },
       {
-        "id": "384755157164407",
-        "name": "ALUGA em Bauru e Divulgue seu negocio",
-        "url": "https://www.facebook.com/groups/384755157164407/"
+        "id": "1309994755699231",
+        "name": "Aluguel de Casas e Aptos Bauru/SP",
+        "url": "https://www.facebook.com/groups/1309994755699231/"
       },
       {
-        "id": "460142850754267",
-        "name": "Venda e Aluguel de Imoveis Bauru e Região",
-        "url": "https://www.facebook.com/groups/460142850754267/"
+        "id": "866732956777533",
+        "name": "Mercadão Imobiliário Bauru",
+        "url": "https://www.facebook.com/groups/866732956777533/"
+      },
+      {
+        "id": "1142520655772928",
+        "name": "IMÓVEIS BAURU",
+        "url": "https://www.facebook.com/groups/1142520655772928/"
       }
     ]
   },
@@ -1850,39 +1614,33 @@
     "state": "RS",
     "type": "city",
     "search_term": "Cachoeirinha RS",
-    "bairro": null,
     "group_ids": [
-      "517856773775135",
-      "563231668258995",
+      "307189460480850",
+      "4290372227900713",
       "1411875775703109",
-      "1668623793197329",
       "1068182369953102",
       "614390027748628",
-      "695201357272224",
-      "665256060169807",
-      "2269552353278826",
-      "1861127557462395"
+      "1668623793197329",
+      "766478533465750",
+      "563231668258995",
+      "618640364904590",
+      "1179619103721151"
     ],
     "group_details": [
       {
-        "id": "517856773775135",
-        "name": "Jardim Betânia cachoeirinha rs",
-        "url": "https://www.facebook.com/groups/517856773775135/"
+        "id": "307189460480850",
+        "name": "Bairro Vista Alegre - Cachoeirinha RS",
+        "url": "https://www.facebook.com/groups/307189460480850/"
       },
       {
-        "id": "563231668258995",
-        "name": "Residencial Campo Belo | Cachoeirinha/ RS",
-        "url": "https://www.facebook.com/groups/563231668258995/"
+        "id": "4290372227900713",
+        "name": "Vila Nova Cachoeirinha",
+        "url": "https://www.facebook.com/groups/4290372227900713/"
       },
       {
         "id": "1411875775703109",
         "name": "Bairro Betania Cachoeirinha Rs",
         "url": "https://www.facebook.com/groups/1411875775703109/"
-      },
-      {
-        "id": "1668623793197329",
-        "name": "Imóveis a venda Cachoeira do Sul",
-        "url": "https://www.facebook.com/groups/1668623793197329/"
       },
       {
         "id": "1068182369953102",
@@ -1895,24 +1653,29 @@
         "url": "https://www.facebook.com/groups/614390027748628/"
       },
       {
-        "id": "695201357272224",
-        "name": "Brick De Motos Cachoeirinha & Gravatai RS",
-        "url": "https://www.facebook.com/groups/695201357272224/"
+        "id": "1668623793197329",
+        "name": "Imóveis a venda Cachoeira do Sul",
+        "url": "https://www.facebook.com/groups/1668623793197329/"
       },
       {
-        "id": "665256060169807",
-        "name": "Classificados Imóveis Cachoeira Do Sul",
-        "url": "https://www.facebook.com/groups/665256060169807/"
+        "id": "766478533465750",
+        "name": "Brick Imoveis Cachoeirinha",
+        "url": "https://www.facebook.com/groups/766478533465750/"
       },
       {
-        "id": "2269552353278826",
-        "name": "Residêncial Cachoeirinha Botucatu",
-        "url": "https://www.facebook.com/groups/2269552353278826/"
+        "id": "563231668258995",
+        "name": "Residencial Campo Belo | Cachoeirinha/ RS",
+        "url": "https://www.facebook.com/groups/563231668258995/"
       },
       {
-        "id": "1861127557462395",
-        "name": "Aluguéis Cachoeirinha e região",
-        "url": "https://www.facebook.com/groups/1861127557462395/"
+        "id": "618640364904590",
+        "name": "Aviso Cachoeirinha",
+        "url": "https://www.facebook.com/groups/618640364904590/"
+      },
+      {
+        "id": "1179619103721151",
+        "name": "Granja Esperança, Cachoeirinha RS",
+        "url": "https://www.facebook.com/groups/1179619103721151/"
       }
     ]
   },
@@ -1921,29 +1684,28 @@
     "state": "GO",
     "type": "city",
     "search_term": "Joviânia GO",
-    "bairro": null,
     "group_ids": [
-      "1034061346680705",
       "2836528416483830",
+      "1034061346680705",
       "723710771051029",
-      "877243212316100",
       "818628865574645",
-      "408363782539296",
-      "806832416413410",
+      "877243212316100",
       "399056583556695",
+      "1407070656172949",
       "1439718522985464",
-      "779625258754835"
+      "174356186057914",
+      "408363782539296"
     ],
     "group_details": [
-      {
-        "id": "1034061346680705",
-        "name": "Venda de imóveis em Goiânia e Aparecida",
-        "url": "https://www.facebook.com/groups/1034061346680705/"
-      },
       {
         "id": "2836528416483830",
         "name": "agios de imóveis Goiânia",
         "url": "https://www.facebook.com/groups/2836528416483830/"
+      },
+      {
+        "id": "1034061346680705",
+        "name": "Venda de imóveis em Goiânia e Aparecida",
+        "url": "https://www.facebook.com/groups/1034061346680705/"
       },
       {
         "id": "723710771051029",
@@ -1951,24 +1713,14 @@
         "url": "https://www.facebook.com/groups/723710771051029/"
       },
       {
-        "id": "877243212316100",
-        "name": "ALUGUEL / VENDA DE IMÓVEIS CASAS APARTAMENTOS GO GOIÁS GOIÂNIA",
-        "url": "https://www.facebook.com/groups/877243212316100/"
-      },
-      {
         "id": "818628865574645",
         "name": "Alugue direto com o Proprietário - Goiânia-GO",
         "url": "https://www.facebook.com/groups/818628865574645/"
       },
       {
-        "id": "408363782539296",
-        "name": "Corretor de Imóveis - Goiânia",
-        "url": "https://www.facebook.com/groups/408363782539296/"
-      },
-      {
-        "id": "806832416413410",
-        "name": "Negócios Imobiliários",
-        "url": "https://www.facebook.com/groups/806832416413410/"
+        "id": "877243212316100",
+        "name": "ALUGUEL / VENDA DE IMÓVEIS CASAS APARTAMENTOS GO GOIÁS GOIÂNIA",
+        "url": "https://www.facebook.com/groups/877243212316100/"
       },
       {
         "id": "399056583556695",
@@ -1976,14 +1728,24 @@
         "url": "https://www.facebook.com/groups/399056583556695/"
       },
       {
+        "id": "1407070656172949",
+        "name": "IMÓVEIS A VENDA (GOIÂNIA E APARECIDA)",
+        "url": "https://www.facebook.com/groups/1407070656172949/"
+      },
+      {
         "id": "1439718522985464",
         "name": "SOMENTE ALUGUÉIS DE IMÓVEIS_GOIÂNIA",
         "url": "https://www.facebook.com/groups/1439718522985464/"
       },
       {
-        "id": "779625258754835",
-        "name": "Compra e Venda de Imoveis Goiânia e Aparecida",
-        "url": "https://www.facebook.com/groups/779625258754835/"
+        "id": "174356186057914",
+        "name": "Compra Venda e Troca - Imóveis Goiânia e Região de GO",
+        "url": "https://www.facebook.com/groups/174356186057914/"
+      },
+      {
+        "id": "408363782539296",
+        "name": "Corretor de Imóveis - Goiânia",
+        "url": "https://www.facebook.com/groups/408363782539296/"
       }
     ]
   },
@@ -1992,39 +1754,33 @@
     "state": "MG",
     "type": "city",
     "search_term": "Minas MG",
-    "bairro": null,
     "group_ids": [
-      "398532924181631",
-      "359524615347398",
       "593131970823807",
-      "1757058971308798",
+      "206552726959115",
+      "398532924181631",
       "467237413321404",
+      "359524615347398",
       "834497886662995",
-      "767108918037366",
-      "209340959190268",
       "2760350354248237",
-      "323362524477201"
+      "3055283731354187",
+      "767108918037366",
+      "209340959190268"
     ],
     "group_details": [
-      {
-        "id": "398532924181631",
-        "name": "Aluga casa é barracão em Para de Minas mg",
-        "url": "https://www.facebook.com/groups/398532924181631/"
-      },
-      {
-        "id": "359524615347398",
-        "name": "Venda e aluguel de imóveis - Brasilia de Minas",
-        "url": "https://www.facebook.com/groups/359524615347398/"
-      },
       {
         "id": "593131970823807",
         "name": "ALUGUÉIS (PARÁ DE MINAS E REGIÃO)",
         "url": "https://www.facebook.com/groups/593131970823807/"
       },
       {
-        "id": "1757058971308798",
-        "name": "aluguel de imóveis Leopoldina Minas Gerais",
-        "url": "https://www.facebook.com/groups/1757058971308798/"
+        "id": "206552726959115",
+        "name": "MARIA DA FÉ-MG! COMPRA, VENDE E ALUGA! MELHORES NEGÓCIOS IMOBILIÁRIOS!",
+        "url": "https://www.facebook.com/groups/206552726959115/"
+      },
+      {
+        "id": "398532924181631",
+        "name": "Aluga casa é barracão em Para de Minas mg",
+        "url": "https://www.facebook.com/groups/398532924181631/"
       },
       {
         "id": "467237413321404",
@@ -2032,9 +1788,24 @@
         "url": "https://www.facebook.com/groups/467237413321404/"
       },
       {
+        "id": "359524615347398",
+        "name": "Venda e aluguel de imóveis - Brasilia de Minas",
+        "url": "https://www.facebook.com/groups/359524615347398/"
+      },
+      {
         "id": "834497886662995",
         "name": "aluga_ se traca e vende. (Para de Minas mg)",
         "url": "https://www.facebook.com/groups/834497886662995/"
+      },
+      {
+        "id": "2760350354248237",
+        "name": "Aluguel Com Preço Justo Minas Gerais - MG32",
+        "url": "https://www.facebook.com/groups/2760350354248237/"
+      },
+      {
+        "id": "3055283731354187",
+        "name": "Compra e Venda - Entre Rios de Minas (MG)",
+        "url": "https://www.facebook.com/groups/3055283731354187/"
       },
       {
         "id": "767108918037366",
@@ -2045,16 +1816,6 @@
         "id": "209340959190268",
         "name": "COMPRA/VENDA/ALUGUEL DE IMÓVEIS PARÁ DE MINAS E REGIÃO",
         "url": "https://www.facebook.com/groups/209340959190268/"
-      },
-      {
-        "id": "2760350354248237",
-        "name": "Aluguel Com Preço Justo Minas Gerais - MG32",
-        "url": "https://www.facebook.com/groups/2760350354248237/"
-      },
-      {
-        "id": "323362524477201",
-        "name": "Betim Imóveis",
-        "url": "https://www.facebook.com/groups/323362524477201/"
       }
     ]
   },
@@ -2063,25 +1824,19 @@
     "state": "RN",
     "type": "city",
     "search_term": "Extremoz RN",
-    "bairro": null,
     "group_ids": [
-      "1709276312713836",
       "848982027212387",
       "759761177003416",
+      "1709276312713836",
       "806832416413410",
-      "1390556161163555",
-      "1226537672108843",
+      "681111002898670",
       "1628879560986072",
-      "1762522773789566",
+      "1390556161163555",
       "1596096200706854",
-      "1901615006579509"
+      "1901615006579509",
+      "1226537672108843"
     ],
     "group_details": [
-      {
-        "id": "1709276312713836",
-        "name": "Imóveis - Compra Venda Aluguel",
-        "url": "https://www.facebook.com/groups/1709276312713836/"
-      },
       {
         "id": "848982027212387",
         "name": "Compra e Venda de Imóveis Direto com Proprietário",
@@ -2093,19 +1848,19 @@
         "url": "https://www.facebook.com/groups/759761177003416/"
       },
       {
+        "id": "1709276312713836",
+        "name": "Imóveis - Compra Venda Aluguel",
+        "url": "https://www.facebook.com/groups/1709276312713836/"
+      },
+      {
         "id": "806832416413410",
         "name": "Negócios Imobiliários",
         "url": "https://www.facebook.com/groups/806832416413410/"
       },
       {
-        "id": "1390556161163555",
-        "name": "Negócios Imobiliários",
-        "url": "https://www.facebook.com/groups/1390556161163555/"
-      },
-      {
-        "id": "1226537672108843",
-        "name": "IMÓVEIS DIRETO COM PROPRIETÁRIO RC",
-        "url": "https://www.facebook.com/groups/1226537672108843/"
+        "id": "681111002898670",
+        "name": "WL Negócios Imobiliário",
+        "url": "https://www.facebook.com/groups/681111002898670/"
       },
       {
         "id": "1628879560986072",
@@ -2113,9 +1868,9 @@
         "url": "https://www.facebook.com/groups/1628879560986072/"
       },
       {
-        "id": "1762522773789566",
-        "name": "Classificados Imobiliários",
-        "url": "https://www.facebook.com/groups/1762522773789566/"
+        "id": "1390556161163555",
+        "name": "Negócios Imobiliários",
+        "url": "https://www.facebook.com/groups/1390556161163555/"
       },
       {
         "id": "1596096200706854",
@@ -2126,6 +1881,11 @@
         "id": "1901615006579509",
         "name": "Imóveis a venda!🚀",
         "url": "https://www.facebook.com/groups/1901615006579509/"
+      },
+      {
+        "id": "1226537672108843",
+        "name": "IMÓVEIS DIRETO COM PROPRIETÁRIO RC",
+        "url": "https://www.facebook.com/groups/1226537672108843/"
       }
     ]
   },
@@ -2134,18 +1894,17 @@
     "state": "SC",
     "type": "city",
     "search_term": "Florianópolis SC",
-    "bairro": null,
     "group_ids": [
       "1309283549083399",
       "407393454360467",
-      "647314668650553",
       "1229094698228730",
-      "1241533163624160",
-      "245985826631088",
-      "2576711895952548",
+      "647314668650553",
       "495212733952543",
-      "361173880687459",
-      "396016307182969"
+      "396016307182969",
+      "245985826631088",
+      "1694699627487587",
+      "701798036573967",
+      "1717483945130421"
     ],
     "group_details": [
       {
@@ -2159,29 +1918,14 @@
         "url": "https://www.facebook.com/groups/407393454360467/"
       },
       {
-        "id": "647314668650553",
-        "name": "SÓ IMOVEIS PALHOÇA",
-        "url": "https://www.facebook.com/groups/647314668650553/"
-      },
-      {
         "id": "1229094698228730",
         "name": "OLX FLORIANÓPOLIS-SC",
         "url": "https://www.facebook.com/groups/1229094698228730/"
       },
       {
-        "id": "1241533163624160",
-        "name": "ALUGUEL DE KITNET NA PALHOÇA G. FLORIANÓPOLIS",
-        "url": "https://www.facebook.com/groups/1241533163624160/"
-      },
-      {
-        "id": "245985826631088",
-        "name": "INGLESES ,FLORIANOPOLIS SC. COMPRAR, VENDER E ALUGAR IMÓVEIS!",
-        "url": "https://www.facebook.com/groups/245985826631088/"
-      },
-      {
-        "id": "2576711895952548",
-        "name": "Venda de Imóveis Grande Florianópolis, São José e Palhoça SC",
-        "url": "https://www.facebook.com/groups/2576711895952548/"
+        "id": "647314668650553",
+        "name": "SÓ IMOVEIS PALHOÇA",
+        "url": "https://www.facebook.com/groups/647314668650553/"
       },
       {
         "id": "495212733952543",
@@ -2189,14 +1933,29 @@
         "url": "https://www.facebook.com/groups/495212733952543/"
       },
       {
-        "id": "361173880687459",
-        "name": "Classificados Florianópolis SC - Vendas e Trocas",
-        "url": "https://www.facebook.com/groups/361173880687459/"
-      },
-      {
         "id": "396016307182969",
         "name": "Negócios Já - Grande Florianópolis / SC",
         "url": "https://www.facebook.com/groups/396016307182969/"
+      },
+      {
+        "id": "245985826631088",
+        "name": "INGLESES ,FLORIANOPOLIS SC. COMPRAR, VENDER E ALUGAR IMÓVEIS!",
+        "url": "https://www.facebook.com/groups/245985826631088/"
+      },
+      {
+        "id": "1694699627487587",
+        "name": "Alugueis de casas e aptos Florianópolis",
+        "url": "https://www.facebook.com/groups/1694699627487587/"
+      },
+      {
+        "id": "701798036573967",
+        "name": "Aluguel de Kitnets Florianópolis e Grande Florianópolis",
+        "url": "https://www.facebook.com/groups/701798036573967/"
+      },
+      {
+        "id": "1717483945130421",
+        "name": "FLORIANÓPOLIS/QUARTOS/ESTUDANTES/ALUGUEL",
+        "url": "https://www.facebook.com/groups/1717483945130421/"
       }
     ]
   },
@@ -2205,18 +1964,17 @@
     "state": "SP",
     "type": "city",
     "search_term": "Odessa SP",
-    "bairro": null,
     "group_ids": [
       "207184482969145",
       "1124759724349876",
-      "366629833517778",
-      "699451680932590",
+      "759761177003416",
       "901883623306920",
       "826348851041792",
-      "1637085013193013",
+      "699451680932590",
       "806832416413410",
       "2421592694770375",
-      "1390556161163555"
+      "1390556161163555",
+      "2202481403313873"
     ],
     "group_details": [
       {
@@ -2230,14 +1988,9 @@
         "url": "https://www.facebook.com/groups/1124759724349876/"
       },
       {
-        "id": "366629833517778",
-        "name": "IMÓVEIS VENDA, SUMARÉ, HORTOLÂNDIA, NOVA ODESSA E PAULÍNIA.",
-        "url": "https://www.facebook.com/groups/366629833517778/"
-      },
-      {
-        "id": "699451680932590",
-        "name": "Imóveis Nova Odessa e Região",
-        "url": "https://www.facebook.com/groups/699451680932590/"
+        "id": "759761177003416",
+        "name": "GRUPO IMOBILIÁRIO compra e venda.",
+        "url": "https://www.facebook.com/groups/759761177003416/"
       },
       {
         "id": "901883623306920",
@@ -2250,9 +2003,9 @@
         "url": "https://www.facebook.com/groups/826348851041792/"
       },
       {
-        "id": "1637085013193013",
-        "name": "MERCADO IMOBILIÁRIO DE SALTO E REGIÃO",
-        "url": "https://www.facebook.com/groups/1637085013193013/"
+        "id": "699451680932590",
+        "name": "Imóveis Nova Odessa e Região",
+        "url": "https://www.facebook.com/groups/699451680932590/"
       },
       {
         "id": "806832416413410",
@@ -2268,6 +2021,11 @@
         "id": "1390556161163555",
         "name": "Negócios Imobiliários",
         "url": "https://www.facebook.com/groups/1390556161163555/"
+      },
+      {
+        "id": "2202481403313873",
+        "name": "Classificados Compra, Venda e Locação de Imóveis em Promissão - SP",
+        "url": "https://www.facebook.com/groups/2202481403313873/"
       }
     ]
   },
@@ -2276,18 +2034,17 @@
     "state": "SP",
     "type": "city",
     "search_term": "Matão SP",
-    "bairro": null,
     "group_ids": [
       "1702238126691339",
-      "1560022687407536",
       "1176817463263114",
-      "1339066136210416",
-      "2282725061816147",
-      "352107458185591",
-      "241800772693199",
+      "1560022687407536",
       "1851224705733412",
-      "790453447697198",
-      "472559136105198"
+      "487908569130543",
+      "1339066136210416",
+      "689067551230994",
+      "511812012198313",
+      "352107458185591",
+      "2065129880459968"
     ],
     "group_details": [
       {
@@ -2296,34 +2053,14 @@
         "url": "https://www.facebook.com/groups/1702238126691339/"
       },
       {
-        "id": "1560022687407536",
-        "name": "Classificados matão trocas e vendas",
-        "url": "https://www.facebook.com/groups/1560022687407536/"
-      },
-      {
         "id": "1176817463263114",
         "name": "CASAS pra alugar em Matão",
         "url": "https://www.facebook.com/groups/1176817463263114/"
       },
       {
-        "id": "1339066136210416",
-        "name": "MATÃO & REGIAO - Classificados.",
-        "url": "https://www.facebook.com/groups/1339066136210416/"
-      },
-      {
-        "id": "2282725061816147",
-        "name": "Vende fácil bairro Matão e região",
-        "url": "https://www.facebook.com/groups/2282725061816147/"
-      },
-      {
-        "id": "352107458185591",
-        "name": "TROCA E VENDA MATÃO",
-        "url": "https://www.facebook.com/groups/352107458185591/"
-      },
-      {
-        "id": "241800772693199",
-        "name": "Bairro Matão",
-        "url": "https://www.facebook.com/groups/241800772693199/"
+        "id": "1560022687407536",
+        "name": "Classificados matão trocas e vendas",
+        "url": "https://www.facebook.com/groups/1560022687407536/"
       },
       {
         "id": "1851224705733412",
@@ -2331,14 +2068,34 @@
         "url": "https://www.facebook.com/groups/1851224705733412/"
       },
       {
-        "id": "790453447697198",
-        "name": "Vendas Matão",
-        "url": "https://www.facebook.com/groups/790453447697198/"
+        "id": "487908569130543",
+        "name": "OLX Classificados Matão-sp Região",
+        "url": "https://www.facebook.com/groups/487908569130543/"
       },
       {
-        "id": "472559136105198",
-        "name": "CLASSIFICADOS MATÃO E REGIÃO",
-        "url": "https://www.facebook.com/groups/472559136105198/"
+        "id": "1339066136210416",
+        "name": "MATÃO & REGIAO - Classificados.",
+        "url": "https://www.facebook.com/groups/1339066136210416/"
+      },
+      {
+        "id": "689067551230994",
+        "name": "Casas pra alugar em matão",
+        "url": "https://www.facebook.com/groups/689067551230994/"
+      },
+      {
+        "id": "511812012198313",
+        "name": "Vendas e alugueis de Casas de Matão",
+        "url": "https://www.facebook.com/groups/511812012198313/"
+      },
+      {
+        "id": "352107458185591",
+        "name": "TROCA E VENDA MATÃO",
+        "url": "https://www.facebook.com/groups/352107458185591/"
+      },
+      {
+        "id": "2065129880459968",
+        "name": "CHAMA QUE DA NEGÓCIO MATÃO-sp",
+        "url": "https://www.facebook.com/groups/2065129880459968/"
       }
     ]
   }

@@ -83,8 +83,8 @@ def main():
 
     # Phase 2: Scrape Facebook groups with cookies
     try:
-        from phase3_simple_login import FacebookScraper
-        scraper = FacebookScraper()
+        from phase3_with_cookies import FacebookGroupScraper
+        scraper = FacebookGroupScraper()
 
         # Use bairro config if available, otherwise fall back to regular config
         from config import DATA_DIR

@@ -3,6 +3,17 @@ Phase 3: Scrape Facebook groups using authenticated cookies
 This bypasses login requirements by using your existing Facebook session
 """
 
+import os
+import sys
+
+# Force Playwright to look outside the temporary EXE folder
+if getattr(sys, 'frozen', False):
+    # Running as PyInstaller .exe - use actual ms-playwright folder
+    os.environ["PLAYWRIGHT_BROWSERS_PATH"] = os.path.expanduser(r"~\AppData\Local\ms-playwright")
+else:
+    # Running normally in venv - use default system pathing
+    os.environ["PLAYWRIGHT_BROWSERS_PATH"] = "0"
+
 import json
 import logging
 import time
@@ -18,7 +29,11 @@ logging.basicConfig(level=getattr(logging, LOG_LEVEL), format=LOG_FORMAT)
 logger = logging.getLogger(__name__)
 
 # Path to store cookies (fallback if not in config)
-COOKIES_FILE = Path("facebook_cookies.json")
+# Look for cookies file next to the .exe when frozen, otherwise next to the script
+if getattr(sys, 'frozen', False):
+    COOKIES_FILE = Path(sys.executable).parent / "facebook_cookies.json"
+else:
+    COOKIES_FILE = Path(__file__).parent / "facebook_cookies.json"
 
 
 class FacebookGroupScraper:
@@ -31,11 +46,27 @@ class FacebookGroupScraper:
         self.page = None
 
     def start_browser(self):
-        """Start Playwright browser"""
-        logger.info("Starting Playwright browser...")
+        """Start Playwright browser using system Chrome only"""
+        logger.info("Starting browser...")
         self.playwright = sync_playwright().start()
-        self.browser = self.playwright.chromium.launch(headless=self.headless)
-        self.page = self.browser.new_page()
+
+        # Use ONLY system Chrome, never Chromium
+        user_data_dir = str(Path.home() / ".leiloaria-browser-data")
+
+        try:
+            logger.info("Launching Google Chrome...")
+            # Use channel="chrome" to force system Chrome, not bundled Chromium
+            self.browser = self.playwright.chromium.launch_persistent_context(
+                user_data_dir=user_data_dir,
+                channel="chrome",
+                headless=self.headless
+            )
+            self.page = self.browser.new_page()
+            logger.info("Successfully launched Google Chrome")
+        except Exception as e:
+            logger.error(f"Failed to launch Chrome: {e}")
+            logger.error("Make sure Google Chrome is installed")
+            raise
 
         # Load cookies - priority: config.py > facebook_cookies.json
         cookies = None

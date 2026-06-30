@@ -44,6 +44,15 @@ credentials.json
 # Temporary files
 ~$*.xlsx
 *.tmp
+nul
+
+# Build artifacts
+*.exe
+*.spec
+*.zip
+build/
+dist/
+playwright_env/
 
 # OS
 .DS_Store

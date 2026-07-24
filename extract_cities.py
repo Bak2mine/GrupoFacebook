@@ -4,12 +4,13 @@ Phase 1: Dynamically extract cities from Leiloaria Smart website and fetch popul
 
 import json
 import requests
+import re
 from pathlib import Path
-from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 from config import DATA_DIR
 
 class CityExtractor:
-    """Extract unique cities from website dynamically and fetch population data from IBGE API"""
+    """Extract unique cities from website dynamically using Playwright and fetch population data from IBGE API"""
 
     def __init__(self):
         self.output_file = DATA_DIR / "search_configuration.json"
@@ -17,30 +18,40 @@ class CityExtractor:
         self.ibge_api = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios"
 
     def scrape_cities_from_website(self):
-        """Scrape cities from Leiloaria Smart website dropdown"""
+        """Scrape cities from Leiloaria Smart website using Playwright"""
         try:
-            print("Fetching website...")
-            response = requests.get(self.website_url, timeout=15)
-            response.raise_for_status()
+            print("Fetching website with Playwright...")
+            playwright = sync_playwright().start()
+            browser = playwright.chromium.launch(headless=True, channel="chrome")
+            page = browser.new_page()
+            page.goto(self.website_url, wait_until="domcontentloaded")
+            page.wait_for_load_state("networkidle")
+
+            # Get page content
+            content = page.content()
+            browser.close()
+            playwright.stop()
 
             print("Parsing cities from website...\n")
-            soup = BeautifulSoup(response.content, 'html.parser')
 
-            # Find all city links in the dropdown (format: href='/filtro/cidade/city-name')
+            # Extract city URLs using regex (format: href='/filtro/cidade/city-name')
             cities = set()
-            for link in soup.find_all('a', href=True):
-                href = link.get('href', '')
-                if href.startswith('/filtro/cidade/'):
-                    city_slug = href.replace('/filtro/cidade/', '').strip()
-                    if city_slug:  # Skip empty ones
-                        cities.add(city_slug)
+            pattern = r"href=['\"]?/filtro/cidade/([^'\" ]+)['\"]?"
+            matches = re.findall(pattern, content)
+
+            for city_slug in matches:
+                city_slug = city_slug.strip()
+                if city_slug:  # Skip empty ones
+                    cities.add(city_slug)
 
             cities = sorted(list(cities))
             print(f"[OK] Found {len(cities)} unique cities from website\n")
-            return cities
+            return cities if cities else None
 
         except Exception as e:
             print(f"[ERROR] Failed to scrape website: {e}")
+            import traceback
+            traceback.print_exc()
             return None
 
     def fetch_population_from_ibge(self, city_name):
@@ -73,6 +84,7 @@ class CityExtractor:
         # Scrape cities from website
         cities = self.scrape_cities_from_website()
         if not cities:
+            print("[ERROR] No cities found on website")
             return False
 
         print("Fetching population data from IBGE API...\n")

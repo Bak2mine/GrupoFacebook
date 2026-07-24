@@ -5,12 +5,16 @@ Phase 1: Dynamically extract cities from Leiloaria Smart website and fetch popul
 import json
 import requests
 import re
+import time
 from pathlib import Path
-from playwright.sync_api import sync_playwright
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from config import DATA_DIR
 
 class CityExtractor:
-    """Extract unique cities from website dynamically using Playwright and fetch population data from IBGE API"""
+    """Extract unique cities from website dynamically using Selenium and fetch population data from IBGE API"""
 
     def __init__(self):
         self.output_file = DATA_DIR / "search_configuration.json"
@@ -18,57 +22,61 @@ class CityExtractor:
         self.ibge_api = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios"
 
     def scrape_cities_from_website(self):
-        """Scrape cities from Leiloaria Smart website using Playwright"""
-        playwright = None
-        browser = None
+        """Scrape cities from Leiloaria Smart website using Selenium"""
+        driver = None
         try:
-            print("Fetching website with Playwright...")
-            playwright = sync_playwright().start()
-            browser = playwright.chromium.launch(headless=True, channel="chrome")
-            page = browser.new_page()
-            page.goto(self.website_url, timeout=60000, wait_until="load")
+            print("Fetching website with Selenium...")
 
-            # Wait for city dropdown to load (give it 10 seconds max)
-            try:
-                page.wait_for_selector("a[href*='/filtro/cidade/']", timeout=10000)
-            except:
-                pass  # Continue anyway, we'll try to parse what we have
+            # Set up Chrome options
+            options = webdriver.ChromeOptions()
+            options.add_argument('--headless')
+            options.add_argument('--no-sandbox')
+            options.add_argument('--disable-dev-shm-usage')
+            options.add_argument('--disable-blink-features=AutomationControlled')
+            options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36')
 
-            # Get page content
-            content = page.content()
-            if browser:
-                browser.close()
-            if playwright:
-                playwright.stop()
+            driver = webdriver.Chrome(options=options)
+            driver.get(self.website_url)
+
+            print("Waiting for city links to load...")
+            # Wait for city links to appear
+            WebDriverWait(driver, 30).until(
+                EC.presence_of_all_elements_located((By.XPATH, "//a[contains(@href, '/filtro/cidade/')]"))
+            )
+
+            # Wait a bit more for dynamic content to settle
+            time.sleep(3)
+
+            # Get page source
+            page_source = driver.page_source
 
             print("Parsing cities from website...\n")
 
             # Extract city URLs using regex (format: href='/filtro/cidade/city-name')
             cities = set()
             pattern = r"href=['\"]?/filtro/cidade/([^'\" ]+)['\"]?"
-            matches = re.findall(pattern, content)
+            matches = re.findall(pattern, page_source)
 
             for city_slug in matches:
                 city_slug = city_slug.strip()
-                if city_slug:  # Skip empty ones
+                if city_slug and city_slug != '':  # Skip empty ones
                     cities.add(city_slug)
 
             cities = sorted(list(cities))
             print(f"[OK] Found {len(cities)} unique cities from website\n")
+
+            if driver:
+                driver.quit()
+
             return cities if cities else None
 
         except Exception as e:
             print(f"[ERROR] Failed to scrape website: {e}")
             import traceback
             traceback.print_exc()
-            if browser:
+            if driver:
                 try:
-                    browser.close()
-                except:
-                    pass
-            if playwright:
-                try:
-                    playwright.stop()
+                    driver.quit()
                 except:
                     pass
             return None

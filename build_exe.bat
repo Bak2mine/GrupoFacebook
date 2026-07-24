@@ -16,19 +16,24 @@ if errorlevel 1 (
 
 echo.
 echo Building executable (this may take a minute)...
-cd ..
+
+for /f "delims=" %%A in ('cd') do set "groupDir=%%A"
+for %%A in ("%groupDir%\..") do set "parentDir=%%~fA"
+
+cd /d "%parentDir%"
+
 pyinstaller --name "Leiloaria Smart" ^
   --onefile ^
-  --distpath "Grupo\dist" ^
-  --workpath "Grupo\build" ^
-  --specpath "Grupo" ^
-  --add-data "Grupo\data:Grupo/data" ^
-  --add-data "Post:Post" ^
+  --clean ^
+  --distpath "%groupDir%\dist" ^
+  --workpath "%groupDir%\build" ^
+  --specpath "%groupDir%" ^
+  --add-data "%groupDir%\data:data" ^
   --hidden-import=openpyxl ^
   --hidden-import=playwright ^
   --hidden-import=bs4 ^
   --console ^
-  Grupo\bootstrap.py
+  "%groupDir%\bootstrap.py"
 
 if errorlevel 1 (
     echo ERROR: Build failed
@@ -36,7 +41,7 @@ if errorlevel 1 (
     exit /b 1
 )
 
-cd Grupo
+cd /d "%groupDir%"
 
 echo.
 echo ========================================

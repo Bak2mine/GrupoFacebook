@@ -1,63 +1,36 @@
 """
-Phase 1: Dynamically extract cities from Leiloaria Smart website and fetch population from IBGE API
+Phase 1: Extract cities from local file and fetch population from IBGE API
+Cities file can be updated manually when website changes
 """
 
 import json
-import requests
-import re
 from pathlib import Path
 from config import DATA_DIR
+import requests
 
 class CityExtractor:
-    """Extract unique cities from website dynamically and fetch population data from IBGE API"""
+    """Extract cities from file and fetch population data from IBGE API"""
 
     def __init__(self):
+        self.cities_file = DATA_DIR / "leiloaria_cities.txt"
         self.output_file = DATA_DIR / "search_configuration.json"
-        self.website_url = "https://www.leiloariasmart.com.br"
         self.ibge_api = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios"
 
-    def scrape_cities_from_website(self):
-        """Scrape cities from Leiloaria Smart website using requests with browser headers"""
-        try:
-            print("Fetching website...")
-
-            # Headers that make it look like a real browser
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                'Accept-Language': 'en-US,en;q=0.5',
-                'Accept-Encoding': 'gzip, deflate',
-                'Connection': 'keep-alive',
-                'Upgrade-Insecure-Requests': '1'
-            }
-
-            response = requests.get(self.website_url, headers=headers, timeout=30)
-            response.raise_for_status()
-
-            print("Parsing cities from website...\n")
-
-            # Extract city URLs using regex (format: href='/filtro/cidade/city-name')
-            cities = set()
-            pattern = r"href=['\"]?/filtro/cidade/([^'\" ]+)['\"]?"
-            matches = re.findall(pattern, response.text)
-
-            print(f"Found {len(matches)} city links in HTML")
-
-            for city_slug in matches:
-                city_slug = city_slug.strip()
-                if city_slug and city_slug != '' and not city_slug.startswith('javascript'):
-                    cities.add(city_slug)
-
-            cities = sorted(list(cities))
-            print(f"[OK] Found {len(cities)} unique cities from website\n")
-
-            return cities if cities else None
-
-        except Exception as e:
-            print(f"[ERROR] Failed to scrape website: {e}")
-            import traceback
-            traceback.print_exc()
+    def load_cities_from_file(self):
+        """Load cities from leiloaria_cities.txt file"""
+        if not self.cities_file.exists():
+            print(f"[ERROR] Cities file not found: {self.cities_file}")
+            print("[HINT] You can update this file by:")
+            print("  1. Opening leiloariasmart.com.br")
+            print("  2. Copying the cities from the dropdown")
+            print("  3. Saving them to data/leiloaria_cities.txt (one per line)")
             return None
+
+        with open(self.cities_file, 'r', encoding='utf-8') as f:
+            cities = [line.strip() for line in f if line.strip()]
+
+        print(f"[OK] Loaded {len(cities)} cities from {self.cities_file}\n")
+        return cities if cities else None
 
     def fetch_population_from_ibge(self, city_name):
         """Fetch population for a city from IBGE API"""
@@ -80,16 +53,15 @@ class CityExtractor:
             return None
 
     def extract_cities(self):
-        """Scrape cities from website, fetch populations, and create search config"""
+        """Load cities from file, fetch populations, and create search config"""
         print("=" * 70)
-        print("EXTRACTING CITIES FROM LEILOARIA SMART WEBSITE")
+        print("EXTRACTING CITIES FROM FILE")
         print("=" * 70)
         print("")
 
-        # Scrape cities from website
-        cities = self.scrape_cities_from_website()
+        # Load cities from file
+        cities = self.load_cities_from_file()
         if not cities:
-            print("[ERROR] No cities found on website")
             return False
 
         print("Fetching population data from IBGE API...\n")

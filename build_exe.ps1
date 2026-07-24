@@ -30,12 +30,10 @@ pyinstaller --name "Leiloaria Smart" `
   --distpath "$grupDir\dist" `
   --workpath "$grupDir\build" `
   --specpath "$grupDir" `
-  --add-data "$grupDir\data:Grupo/data" `
-  --add-data "$parentDir\Post:Post" `
+  --add-data "$grupDir\data:data" `
   --hidden-import=openpyxl `
   --hidden-import=playwright `
   --hidden-import=bs4 `
-  --exclude-module=playwright.async_api `
   --console `
   "$grupDir\bootstrap.py"
 

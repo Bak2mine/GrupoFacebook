@@ -34,6 +34,9 @@ pyinstaller --name "Leiloaria Smart" `
   --hidden-import=openpyxl `
   --hidden-import=playwright `
   --hidden-import=bs4 `
+  --hidden-import=selenium `
+  --hidden-import=selenium.webdriver `
+  --hidden-import=selenium.webdriver.chrome `
   --console `
   "$grupDir\bootstrap.py"
 

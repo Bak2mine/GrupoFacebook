@@ -5,16 +5,11 @@ Phase 1: Dynamically extract cities from Leiloaria Smart website and fetch popul
 import json
 import requests
 import re
-import time
 from pathlib import Path
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from config import DATA_DIR
 
 class CityExtractor:
-    """Extract unique cities from website dynamically using Selenium and fetch population data from IBGE API"""
+    """Extract unique cities from website dynamically and fetch population data from IBGE API"""
 
     def __init__(self):
         self.output_file = DATA_DIR / "search_configuration.json"
@@ -22,51 +17,39 @@ class CityExtractor:
         self.ibge_api = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios"
 
     def scrape_cities_from_website(self):
-        """Scrape cities from Leiloaria Smart website using Selenium"""
-        driver = None
+        """Scrape cities from Leiloaria Smart website using requests with browser headers"""
         try:
-            print("Fetching website with Selenium...")
+            print("Fetching website...")
 
-            # Set up Chrome options
-            options = webdriver.ChromeOptions()
-            options.add_argument('--headless')
-            options.add_argument('--no-sandbox')
-            options.add_argument('--disable-dev-shm-usage')
-            options.add_argument('--disable-blink-features=AutomationControlled')
-            options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36')
+            # Headers that make it look like a real browser
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1'
+            }
 
-            driver = webdriver.Chrome(options=options)
-            driver.get(self.website_url)
-
-            print("Waiting for city links to load...")
-            # Wait for city links to appear
-            WebDriverWait(driver, 30).until(
-                EC.presence_of_all_elements_located((By.XPATH, "//a[contains(@href, '/filtro/cidade/')]"))
-            )
-
-            # Wait a bit more for dynamic content to settle
-            time.sleep(3)
-
-            # Get page source
-            page_source = driver.page_source
+            response = requests.get(self.website_url, headers=headers, timeout=30)
+            response.raise_for_status()
 
             print("Parsing cities from website...\n")
 
             # Extract city URLs using regex (format: href='/filtro/cidade/city-name')
             cities = set()
             pattern = r"href=['\"]?/filtro/cidade/([^'\" ]+)['\"]?"
-            matches = re.findall(pattern, page_source)
+            matches = re.findall(pattern, response.text)
+
+            print(f"Found {len(matches)} city links in HTML")
 
             for city_slug in matches:
                 city_slug = city_slug.strip()
-                if city_slug and city_slug != '':  # Skip empty ones
+                if city_slug and city_slug != '' and not city_slug.startswith('javascript'):
                     cities.add(city_slug)
 
             cities = sorted(list(cities))
             print(f"[OK] Found {len(cities)} unique cities from website\n")
-
-            if driver:
-                driver.quit()
 
             return cities if cities else None
 
@@ -74,11 +57,6 @@ class CityExtractor:
             print(f"[ERROR] Failed to scrape website: {e}")
             import traceback
             traceback.print_exc()
-            if driver:
-                try:
-                    driver.quit()
-                except:
-                    pass
             return None
 
     def fetch_population_from_ibge(self, city_name):

@@ -52,20 +52,20 @@ def main():
     completed_phases = []
     failed_phase = None
 
-    # Phase 1: Extract bairros for large cities
+    # Phase 1: Extract cities from Leiloaria Smart website
     try:
-        from extract_bairros import BairroExtractor
-        extractor = BairroExtractor()
+        from extract_cities import CityExtractor
+        extractor = CityExtractor()
 
-        if run_phase("1: Extract Bairros", extractor.run):
-            completed_phases.append("Extract Bairros")
+        if run_phase("1: Extract Cities", extractor.run):
+            completed_phases.append("Extract Cities")
         else:
-            failed_phase = "Extract Bairros"
-            raise Exception("Bairro extraction failed")
+            failed_phase = "Extract Cities"
+            raise Exception("City extraction failed")
 
     except Exception as e:
         logger.error(f"Phase 1 error: {e}")
-        failed_phase = "Extract Bairros"
+        failed_phase = "Extract Cities"
 
     if failed_phase:
         logger.error("")
@@ -86,11 +86,9 @@ def main():
         from phase3_with_cookies import FacebookGroupScraper
         scraper = FacebookGroupScraper()
 
-        # Use bairro config if available, otherwise fall back to regular config
+        # Use the search configuration created by Phase 1
         from config import DATA_DIR
-        config_file = DATA_DIR / "search_configuration_bairro.json"
-        if not config_file.exists():
-            config_file = DATA_DIR / "search_configuration.json"
+        config_file = DATA_DIR / "search_configuration.json"
 
         if run_phase("2: Scrape Facebook Groups", scraper.run, config_file):
             completed_phases.append("Scrape Facebook Groups")

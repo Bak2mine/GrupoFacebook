@@ -19,18 +19,27 @@ class CityExtractor:
 
     def scrape_cities_from_website(self):
         """Scrape cities from Leiloaria Smart website using Playwright"""
+        playwright = None
+        browser = None
         try:
             print("Fetching website with Playwright...")
             playwright = sync_playwright().start()
             browser = playwright.chromium.launch(headless=True, channel="chrome")
             page = browser.new_page()
-            page.goto(self.website_url, wait_until="domcontentloaded")
-            page.wait_for_load_state("networkidle")
+            page.goto(self.website_url, timeout=60000, wait_until="load")
+
+            # Wait for city dropdown to load (give it 10 seconds max)
+            try:
+                page.wait_for_selector("a[href*='/filtro/cidade/']", timeout=10000)
+            except:
+                pass  # Continue anyway, we'll try to parse what we have
 
             # Get page content
             content = page.content()
-            browser.close()
-            playwright.stop()
+            if browser:
+                browser.close()
+            if playwright:
+                playwright.stop()
 
             print("Parsing cities from website...\n")
 
@@ -52,6 +61,16 @@ class CityExtractor:
             print(f"[ERROR] Failed to scrape website: {e}")
             import traceback
             traceback.print_exc()
+            if browser:
+                try:
+                    browser.close()
+                except:
+                    pass
+            if playwright:
+                try:
+                    playwright.stop()
+                except:
+                    pass
             return None
 
     def fetch_population_from_ibge(self, city_name):
